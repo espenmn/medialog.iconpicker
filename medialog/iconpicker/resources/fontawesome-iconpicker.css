@@ -25,6 +25,12 @@
  * https://github.com/mjolnic/fontawesome-iconpicker/blob/master/LICENSE
  *
  */
+ 
+ #form-widgets-IIconPickerBehavior-iconfield
+ {
+	color:  red;
+	display: none;
+} 
 .iconpicker-popover.popover {
   position: absolute;
   top: 0;
