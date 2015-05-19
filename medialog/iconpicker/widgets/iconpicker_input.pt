@@ -1,5 +1,6 @@
 <html>
-<button                role="iconpicker"  
+<button                class="btn btn-default" 
+ 					   role="iconpicker"  
 					   tal:attributes="id string:${view/id};
                        name view/name;
                        icon view/value;
@@ -10,7 +11,7 @@
                        accesskey view/accesskey;
                        onselect view/onselect;" />
                        
-<input  type="text"    tal:attributes="id string:${view/id};
+<input  type="hidden"    tal:attributes="id string:${view/id};
                        name view/name;
                        title view/title;
                        lang view/lang;
