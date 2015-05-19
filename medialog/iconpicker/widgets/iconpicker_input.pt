@@ -1,22 +1,47 @@
 <html>
-<head>
-     
-    <input   type="text" placeholder="Type in an address" size=42  name="" class="iconpicker">
-	
-	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script src="++resource++medialog.iconpicker/fontawesome-iconpicker.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-        <script src="++resource++medialog.iconpicker/iconpicker.js"></script>
-   
-	
-	       
-    <script>
-      $(document).ready(function(){
-        
-        $('#form-widgets-IIconPickerBehavior-iconfield').iconpicker();
-        
-      });
-    </script>
+<input  type="text" class="iconpicker"  role="iconpicker"  tal:attributes="id string:${view/id};
+                       name view/name;
+                       class string:${view/klass} place;
+                       style view/style;
+                       title view/title;
+                       lang view/lang;
+                       value view/value;
+                       disabled view/disabled;
+                       alt view/alt;
+                       accesskey view/accesskey;
+                       onselect view/onselect;
+                       size view/size;
+                       maxlength view/maxlength" />
+ 
+<button   class="iconpicker"  role="iconpicker"  tal:attributes="id string:${view/id};
+                       name view/name;
+                       class string:${view/klass} place;
+                       style view/style;
+                       title view/title;
+                       lang view/lang;
+                       value view/value;
+                       disabled view/disabled;
+                       alt view/alt;
+                       accesskey view/accesskey;
+                       onselect view/onselect;
+                       size view/size;
+                       maxlength view/maxlength" />
+ 
+    
+<!-- Bootstrap -->
+<link rel="stylesheet" href="++resource++medialog.iconpicker/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<!-- Bootstrap-Iconpicker -->
+<link rel="stylesheet" href="++resource++medialog.iconpicker/bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"/>
+ 
+<!-- jQuery -->
+ 
+<!-- Bootstrap -->
+<script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<!-- Bootstrap-Iconpicker Iconset for Glyphicon -->
+<script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-glyphicon.min.js"></script>
+<!-- Bootstrap-Iconpicker -->
+<script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"></script>
 
-	 </body>
-</html>
+
+
+</html> 

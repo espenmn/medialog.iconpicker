@@ -16,8 +16,9 @@ class IIconPickerBehavior(form.Schema):
     
     iconfield = schema.TextLine(
         title = _("icon", default=u"Icon"),
+        required = False,
         description = _("help_icon",
-                      default="Choose SIcon"),
+                      default="Choose Icon"),
     )
 
     form.widget(

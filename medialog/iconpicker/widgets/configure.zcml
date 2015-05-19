@@ -16,7 +16,7 @@
       mode="display"
       widget="medialog.iconpicker.widgets.widget.IIconPickerWidget"
       layer="z3c.form.interfaces.IFormLayer"
-      template="iconpicker_display.pt" />
+      template="iconpicker_input.pt" />
 
   <z3c:widgetTemplate
       mode="input"
