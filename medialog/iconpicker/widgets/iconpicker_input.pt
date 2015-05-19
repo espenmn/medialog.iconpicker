@@ -1,5 +1,6 @@
 <html>
 <button                class="btn btn-default" 
+					   data-iconset="fontawesome"
  					   role="iconpicker"  
 					   tal:attributes="id string:${view/id};
                        name view/name;
@@ -11,7 +12,7 @@
                        accesskey view/accesskey;
                        onselect view/onselect;" />
                        
-<input  type="hidden"    tal:attributes="id string:${view/id};
+<input  type="hidden"  tal:attributes="id string:${view/id};
                        name view/name;
                        title view/title;
                        lang view/lang;
@@ -24,19 +25,23 @@
                        maxlength view/maxlength" />
  
 
- 
-    
-<!-- Bootstrap -->
-<link rel="stylesheet" href="++resource++medialog.iconpicker/bootstrap-3.2.0/css/bootstrap.min.css"/>
+
 <!-- Bootstrap-Iconpicker -->
 <link rel="stylesheet" href="++resource++medialog.iconpicker/bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"/>
- 
-<!-- jQuery -->
- 
+<!-- link rel="stylesheet" href="++resource++medialog.iconpicker/bootstrap-iconpicker/css/icon-fonts/ionicons-1.5.2/css/ionicons.min.css"/ -->
+
+
 <!-- Bootstrap -->
-<script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<!-- link rel="stylesheet" href="++resource++medialog.iconpicker/bootstrap-3.2.0/css/bootstrap.min.css"/ -->
+<!-- script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-3.2.0/js/bootstrap.min.js"></script -->
+<script type="text/javascript" src="++resource++collective.js.bootstrap/js/bootstrap.min.js"></script>
+ 
 <!-- Bootstrap-Iconpicker Iconset for Glyphicon -->
-<script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-glyphicon.min.js"></script>
+<!-- script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-glyphicon.min.js"></script  -->
+
+<!-- Bootstrap-Iconpicker Iconset for Fontawsome -->
+<script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.2.0.js"></script>
+
 <!-- Bootstrap-Iconpicker -->
 <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"></script>
 
