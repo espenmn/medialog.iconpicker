@@ -14,14 +14,14 @@ class IIconPickerBehavior(form.Schema):
     """ A field for icons"""
     
     
-    icon = schema.TextLine(
+    iconfield = schema.TextLine(
         title = _("icon", default=u"Icon"),
         description = _("help_icon",
                       default="Choose SIcon"),
     )
 
     form.widget(
-            icon=IconPickerFieldWidget,
+            iconfield=IconPickerFieldWidget,
     )
 
 alsoProvides(IIconPickerBehavior, IFormFieldProvider)
