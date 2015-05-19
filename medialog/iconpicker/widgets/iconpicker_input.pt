@@ -1,0 +1,22 @@
+
+<fieldset>
+	 <input   type="text" placeholder="Type in an address" size=42  name="" class="iconpicker">
+ 
+ 
+
+</fieldset>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="++resource++medialog.iconpicker/fontawesome-iconpicker.css">
+     
+    <script src="++resource++medialog.iconpicker/fontawesome-iconpicker.min.js"></script>
+        
+    <script>
+      $(document).ready(function(){
+        
+        $('.my').iconpicker();
+        
+      });
+    </script>
+
+        
+  

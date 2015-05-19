@@ -1,0 +1,17 @@
+
+medialog.hyperlapse.egg-info/*
+
+medialog.hyperlapse.egg-info
+
+medialog.hyperlapse.egg-info/
+
+Paste-1.7.5.1-py2.7.egg 
+
+PasteScript-1.7.5-py2.7.egg
+
+Paste*
+*.pyc
+
+medialog.iconpicker.egg-info/not-zip-safe
+
+medialog.iconpicker.egg-info/namespace_packages.txt
