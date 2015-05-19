@@ -1,31 +1,28 @@
 <html>
-<input  type="text" class="iconpicker"  role="iconpicker"  tal:attributes="id string:${view/id};
+<button                role="iconpicker"  
+					   tal:attributes="id string:${view/id};
                        name view/name;
-                       class string:${view/klass} place;
-                       style view/style;
+                       icon view/value;
+                       data-icon view/value;
+                       value view/value;
+                       disabled view/disabled;
+                       alt view/alt;
+                       accesskey view/accesskey;
+                       onselect view/onselect;" />
+                       
+<input  type="text"    tal:attributes="id string:${view/id};
+                       name view/name;
                        title view/title;
                        lang view/lang;
                        value view/value;
-                       disabled view/disabled;
+                       disabled True;
                        alt view/alt;
                        accesskey view/accesskey;
                        onselect view/onselect;
                        size view/size;
                        maxlength view/maxlength" />
  
-<button   class="iconpicker"  role="iconpicker"  tal:attributes="id string:${view/id};
-                       name view/name;
-                       class string:${view/klass} place;
-                       style view/style;
-                       title view/title;
-                       lang view/lang;
-                       value view/value;
-                       disabled view/disabled;
-                       alt view/alt;
-                       accesskey view/accesskey;
-                       onselect view/onselect;
-                       size view/size;
-                       maxlength view/maxlength" />
+
  
     
 <!-- Bootstrap -->

@@ -14,8 +14,6 @@ class IIconPickerWidget(interfaces.IWidget):
 class IconPickerWidget(text.TextWidget):
     """Iconpicker code is double here, must check."""
     
-    maxlength = 50	
-    size = 30
     
     zope.interface.implementsOnly(IIconPickerWidget)
     
