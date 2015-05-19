@@ -8,7 +8,7 @@
    <plone:behavior
         title="iconpicker behavior"
         description="Provides a field to choose an icon"
-        provides=".behavior.IIconPicker"
+        provides=".behavior.IIconPickerBehavior"
         for="plone.dexterity.interfaces.IDexterityContent"
         />
    

@@ -18,7 +18,7 @@ class IconPickerWidget(text.TextWidget):
     size = 30
     
     
-    zope.interface.implementsOnly(IIconPickerWidget)
+    #zope.interface.implementsOnly(IIconPickerWidget)
     
 	#nothing else happens
     

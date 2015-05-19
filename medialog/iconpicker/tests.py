@@ -8,12 +8,12 @@ from Products.PloneTestCase import PloneTestCase as ptc
 from Products.PloneTestCase.layer import PloneSite
 from Products.PloneTestCase.layer import onsetup
 
-import medialog.hyperlapse
+import medialog.iconpicker
 
 OPTION_FLAGS = doctest.NORMALIZE_WHITESPACE | \
                doctest.ELLIPSIS
 
-ptc.setupPloneSite(products=['medialog.hyperlapse'])
+ptc.setupPloneSite(products=['medialog.iconpicker'])
 
 
 class TestCase(ptc.PloneTestCase):
@@ -23,7 +23,7 @@ class TestCase(ptc.PloneTestCase):
         @classmethod
         def setUp(cls):
             zcml.load_config('configure.zcml',
-              medialog.hyperlapse)
+              medialog.iconpicker)
 
         @classmethod
         def tearDown(cls):
@@ -35,18 +35,18 @@ def test_suite():
 
         # Unit tests
         #doctestunit.DocFileSuite(
-        #    'README.txt', package='medialog.hyperlapse',
+        #    'README.txt', package='medialog.iconpicker',
         #    setUp=testing.setUp, tearDown=testing.tearDown),
 
         #doctestunit.DocTestSuite(
-        #    module='medialog.hyperlapse.mymodule',
+        #    module='medialog.iconpicker.mymodule',
         #    setUp=testing.setUp, tearDown=testing.tearDown),
 
 
         # Integration tests that use PloneTestCase
         ztc.ZopeDocFileSuite(
             'INTEGRATION.txt',
-            package='medialog.hyperlapse',
+            package='medialog.iconpicker',
             optionflags = OPTION_FLAGS,
             test_class=TestCase),
 
@@ -54,8 +54,8 @@ def test_suite():
 
         # Integration tests for Hyperlapse
         ztc.ZopeDocFileSuite(
-            'Hyperlapse.txt',
-            package='medialog.hyperlapse',
+            'Iconpicker.txt',
+            package='medialog.iconpicker',
             optionflags = OPTION_FLAGS,
             test_class=TestCase),
 

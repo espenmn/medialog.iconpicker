@@ -5,12 +5,12 @@ from plone.autoform.interfaces import IFormFieldProvider
 from zope.interface import alsoProvides
 from zope.i18nmessageid import MessageFactory
 
-from medialog.iconpicker.widgets.widget import IconPickerWidget
+from medialog.iconpicker.widgets.widget import IconPickerFieldWidget
 
 _ = MessageFactory('medialog.iconpicker')
 
 
-class IIconPicker(form.Schema):
+class IIconPickerBehavior(form.Schema):
     """ A field for icons"""
     
     
@@ -21,8 +21,8 @@ class IIconPicker(form.Schema):
     )
 
     form.widget(
-            icon=IconPickerWidget
+            icon=IconPickerFieldWidget,
     )
 
-alsoProvides(IIconPicker, IFormFieldProvider)
+alsoProvides(IIconPickerBehavior, IFormFieldProvider)
 

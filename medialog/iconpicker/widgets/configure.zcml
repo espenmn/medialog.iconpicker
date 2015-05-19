@@ -11,7 +11,7 @@
         />
   </class>
 
-  <!-- this widget is not configured for any field by default -->
+  <!-- this widget is not configured for any field  -->
   <z3c:widgetTemplate
       mode="display"
       widget="medialog.iconpicker.widgets.widget.IIconPickerWidget"
