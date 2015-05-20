@@ -1,6 +1,7 @@
+
 <html>
 <button                class="btn btn-default" 
-					   data-iconset="fontawesome"
+					   data-iconset="fontawsome"
  					   role="iconpicker"  
 					   tal:attributes="id string:${view/id};
                        name view/name;
@@ -28,23 +29,18 @@
 
 <!-- Bootstrap-Iconpicker -->
 <link rel="stylesheet" href="++resource++medialog.iconpicker/bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"/>
-<!-- link rel="stylesheet" href="++resource++medialog.iconpicker/bootstrap-iconpicker/css/icon-fonts/ionicons-1.5.2/css/ionicons.min.css"/ -->
-
 
 <!-- Bootstrap -->
-<!-- link rel="stylesheet" href="++resource++medialog.iconpicker/bootstrap-3.2.0/css/bootstrap.min.css"/ -->
-<!-- script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-3.2.0/js/bootstrap.min.js"></script -->
 <script type="text/javascript" src="++resource++collective.js.bootstrap/js/bootstrap.min.js"></script>
  
 <!-- Bootstrap-Iconpicker Iconset for Glyphicon -->
-<!-- script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-glyphicon.min.js"></script  -->
+<script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-glyphicon.min.js"></script>
 
 <!-- Bootstrap-Iconpicker Iconset for Fontawsome -->
 <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.2.0.js"></script>
 
 <!-- Bootstrap-Iconpicker -->
 <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"></script>
-
 
 
 </html> 
