@@ -27,8 +27,6 @@
  
 
 
-<!-- Bootstrap-Iconpicker -->
-<link rel="stylesheet" href="++resource++medialog.iconpicker/bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"/>
 
 <!-- Bootstrap -->
 <script type="text/javascript" src="++resource++collective.js.bootstrap/js/bootstrap.min.js"></script>
@@ -36,10 +34,11 @@
 <!-- Bootstrap-Iconpicker Iconset for Glyphicon -->
 <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-glyphicon.min.js"></script>
 
-<!-- Bootstrap-Iconpicker Iconset for Fontawsome -->
+<!-- Bootstrap-Iconpicker for Fontawsome -->
 <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.2.0.js"></script>
 
 <!-- Bootstrap-Iconpicker -->
+<link rel="stylesheet" href="++resource++medialog.iconpicker/bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"/>
 <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"></script>
 
 
