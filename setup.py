@@ -30,7 +30,8 @@ setup(name='medialog.iconpicker',
           'plone.behavior',
           'plone.directives.form',
           'collective.js.bootstrap',
-          'medialog.controlpanel'
+          'medialog.controlpanel',
+          'plone.api',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

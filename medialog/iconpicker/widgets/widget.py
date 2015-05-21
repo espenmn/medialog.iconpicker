@@ -6,6 +6,9 @@ from z3c.form import interfaces
 from z3c.form import widget
 from z3c.form.browser import text
 
+from plone import api
+from medialog.iconpicker.interfaces import IIconPickerSettings
+
 
 class IIconPickerWidget(interfaces.IWidget):
     """Iconpicker widget."""
@@ -14,23 +17,25 @@ class IIconPickerWidget(interfaces.IWidget):
 class IconPickerWidget(text.TextWidget):
     """Iconpicker Widget"""
     
-    #maxlength = 50	
+    #maxlength = 50
     #size = 5
     
     zope.interface.implementsOnly(IIconPickerWidget)
     
-
     def iconset(self):
-        """Returns current iconset name
-            This is also used for loading the resources below"""
-        return "mapicon"     
+        """Returns current iconset name This is also used for loading the resources below"""
+        return str(api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.iconset'))
+        
+    def loadbootstrap(self):
+        #get settings from control panel / registry
+        return (api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.loadbootstrap'))
 
     def glyphicon(self):
         return """
         <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-glyphicon.min.js"></script>
         """
 
-    def fontawsome(self):
+    def fontawesome(self):
         return """
         <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.2.0.js"></script>
         <link rel="stylesheet" href="++resource++medialog.iconpicker/icon-fonts/font-awesome-4.2.0/css/font-awesome.min.css"/>
@@ -42,13 +47,13 @@ class IconPickerWidget(text.TextWidget):
         <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-mapicon-2.1.0.min.js"></script>
         """
 
-    def typiconn(self):
+    def typicon(self):
         return """
         <link rel="stylesheet" href="++resource++medialog.iconpicker/icon-fonts/typicons-2.0.6/css/typicons.min.css"/>
         <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-typicon-2.0.6.min.js"></script>
         """
         
-    def ioniconn(self):
+    def ionicon(self):
        return """
         <link rel="stylesheet" href="++resource++medialog.iconpicker/icon-fonts/ionicons-1.5.2/css/ionicons.min.css"/>
         <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-ionicon-1.5.2.min.js"></script>
@@ -60,7 +65,7 @@ class IconPickerWidget(text.TextWidget):
         <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-weathericon-1.2.0.min.js"></script>
         """
             
-    def oction(self):
+    def octicon(self):
         return """
         <link rel="stylesheet" href="++resource++medialog.iconpicker/icon-fonts/octicons-2.1.2/css/octicons.min.css"/>
         <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-octicon-2.1.2.min.js"></script>
@@ -71,7 +76,7 @@ class IconPickerWidget(text.TextWidget):
         <link rel="stylesheet" href="++resource++medialog.iconpicker/icon-fonts/elusive-icons-2.0.0/css/elusive-icons.min.css"/>
         <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-elusiveicon-2.0.0.min.js"></script>
         """
-    
+     
  
 def IconPickerFieldWidget(field, request):
     """IFieldWidget factory for IconPickerWidget."""

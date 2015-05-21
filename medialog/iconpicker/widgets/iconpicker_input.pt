@@ -30,7 +30,8 @@
 
 
 <!-- Bootstrap -->
-<script type="text/javascript" src="++resource++collective.js.bootstrap/js/bootstrap.min.js"></script>
+<script tal:condition="view/loadbootstrap"
+    ype="text/javascript" src="++resource++collective.js.bootstrap/js/bootstrap.min.js"></script>
  
 <!-- font specific resources -->
 <tal:resources tal:define="iconset view/iconset" tal:replace="structure view/?iconset"/>

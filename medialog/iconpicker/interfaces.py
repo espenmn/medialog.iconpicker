@@ -18,13 +18,21 @@ class IIconPickerSettings(form.Schema):
         label=_(u'Iconpicker settings'),
         fields=[
              'iconset',
+             'loadbootstrap',
         ],
      )
 
-    iconset = schema.TextLine(
+    iconset = schema.Choice(
         title=_(u"label_iconset", default=u"Iconset"),
-        description=_(u"help_iconset",
-        default=u"Choose iconset to be used for iconpicker")
+        description=_(u"help_iconset", default=u"Choose iconset to be used for iconpicker"),
+        values=[('glyphicon'), ('ionicon'), ('fontawesome'), ('weathericon'), ('mapicon'), ('octicon'), ('typicon'), ('elusiveicon'),]
         )
-
+    
+    loadbootstrap = schema.Bool (
+     	title=_(u"label_loadbootstrap", default=u"Load Bootstrap"),
+        description=_(u"help_loadbootstrap", 
+            default=u"""Loads ++resource++collective.js.bootstrap/js/bootstrap.min.js. <br/>
+            You probably want to do this in your diazo theme instead.""")
+        )
+        
 alsoProvides(IIconPickerSettings, IMedialogControlpanelSettingsProvider)
