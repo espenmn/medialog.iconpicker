@@ -24,21 +24,21 @@ class IconPickerWidget(text.TextWidget):
     
     def iconset(self):
         """Returns current iconset name This is also used for loading the resources below"""
-        return str(api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.iconset'))
+        return api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.iconset')
         
     def cols(self):
-        return str(api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.cols'))´
+        return api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.cols')
         
     def rows(self):
-        return str(api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.rows'))
+        return api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.rows')
         
     def placement(self):
-        return str(api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.placement'))
+        return api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.placement')
         
         
     def loadbootstrap(self):
         #get settings from control panel / registry
-        return (api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.loadbootstrap'))
+        return api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.loadbootstrap')
 
     def glyphicon(self):
         return """

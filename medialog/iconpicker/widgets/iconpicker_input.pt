@@ -4,17 +4,16 @@
  					   role="iconpicker"  
 					   tal:attributes="id string:${view/id};
                        name view/name;
-                       data-iconset view/iconset;
-                       data-icon view/value;
-                       data-rows view/rows;
-                       data-columns view/columns;
+                       data-iconset   view/iconset;
+                       data-icon      view/value;
+                       data-rows      view/rows;
+                       data-cols      view/cols;
                        data-placement view/placement;
                        value view/value;
                        disabled view/disabled;
                        alt view/alt;
                        accesskey view/accesskey;
                        onselect view/onselect;"  />
-<p> the font can be changed in the control panel. Avalable fonts are  glyphicon|ionicon|fontawesome|weathericon|mapicon|octicon|typicon|elusiveicon</p>
               
 
 <input  type="hidden"  tal:attributes="id string:${view/id};
@@ -30,16 +29,14 @@
                        maxlength view/maxlength" />
  
 
-
-
-<!-- Bootstrap -->
+<!-- Bootstrap JS, loaded on condition-->
 <script tal:condition="view/loadbootstrap"
-    ype="text/javascript" src="++resource++collective.js.bootstrap/js/bootstrap.min.js"></script>
+    type="text/javascript" src="++resource++collective.js.bootstrap/js/bootstrap.min.js"></script>
  
 <!-- font specific resources -->
 <tal:resources tal:define="iconset view/iconset" tal:replace="structure view/?iconset"/>
  
-<!-- Bootstrap-Iconpicker -->
+<!-- Bootstrap-Iconpicker JS and CSS -->
 <link rel="stylesheet" href="++resource++medialog.iconpicker/bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"/>
 <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"></script>
 

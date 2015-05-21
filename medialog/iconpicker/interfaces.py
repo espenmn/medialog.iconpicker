@@ -18,6 +18,9 @@ class IIconPickerSettings(form.Schema):
         label=_(u'Iconpicker settings'),
         fields=[
              'iconset',
+             'cols',
+             'rows',
+             'placement',
              'loadbootstrap',
         ],
      )
