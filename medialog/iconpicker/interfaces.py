@@ -10,21 +10,21 @@ from zope.i18nmessageid import MessageFactory
 _ = MessageFactory('medialog.iconpicker')
 
 class IIconPickerSettings(form.Schema):
-"""Adds settings to medialog.controlpanel
-"""
+    """Adds settings to medialog.controlpanel
+    """
 
-form.fieldset(
-'iconpicker',
-label=_(u'Iconpicker settings'),
-fields=[
-'iconset',
-],
-)
+    form.fieldset(
+        'iconpicker',
+        label=_(u'Iconpicker settings'),
+        fields=[
+             'iconset',
+        ],
+     )
 
-iconset = schema.TextLine(
-title=_(u"label_iconset", default=u"Iconset"),
-description=_(u"help_iconset",
-default=u"Choose iconset to be used for iconpicker")
-)
+    iconset = schema.TextLine(
+        title=_(u"label_iconset", default=u"Iconset"),
+        description=_(u"help_iconset",
+        default=u"Choose iconset to be used for iconpicker")
+        )
 
 alsoProvides(IIIconPickerSettings, IMedialogControlpanelSettingsProvider)

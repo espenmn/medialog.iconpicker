@@ -13,8 +13,6 @@ Description: Introduction
         
         ![image](http://victor-valencia.github.io/bootstrap-iconpicker/bootstrap-iconpicker.png)
         
-        To do:
-        Make it configurable, so you can choose between fonts
         
         Author:
         Espen Moe-Nilssen
@@ -22,10 +20,10 @@ Description: Introduction
         Changelog
         =========
         
-        0.1dev (unreleased)
+        0.1dev (22 may 2015)
         -------------------
         
-        - Initial release
+        - Initial release [espenmn]
         
 Platform: UNKNOWN
 Classifier: Framework :: Plone
