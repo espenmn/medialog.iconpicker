@@ -2,5 +2,8 @@
 <records interface="medialog.iconpicker.interfaces.IIconPickerSettings">
 <value key="iconset">fontawesome</value>
 <value key="loadbootstrap">True</value>
+<value key="rows">5</value>
+<value key="columns">6</value>
+<value key="placement">bottom</value>
 </records>
 </registry>

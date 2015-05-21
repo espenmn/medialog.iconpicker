@@ -35,4 +35,18 @@ class IIconPickerSettings(form.Schema):
             You probably want to do this in your diazo theme instead.""")
         )
         
+    cols = schema.Int (
+    	title=_(u"label_columns", default=u"Columns"),
+    )
+    
+    rows = schema.Int (
+    	title=_(u"label_rows", default=u"Rows"),
+    )
+
+    placement = schema.Choice(
+        title=_(u"label_placement", default=u"Placement"),
+        values=[('left'), ('top'), ('bottom'), ('right'),]
+        )
+
+        
 alsoProvides(IIconPickerSettings, IMedialogControlpanelSettingsProvider)

@@ -6,6 +6,9 @@
                        name view/name;
                        data-iconset view/iconset;
                        data-icon view/value;
+                       data-rows view/rows;
+                       data-columns view/columns;
+                       data-placement view/placement;
                        value view/value;
                        disabled view/disabled;
                        alt view/alt;
