@@ -1,9 +1,9 @@
 
-medialog.hyperlapse.egg-info/*
+medialog.iconpicker.egg-info/*
 
-medialog.hyperlapse.egg-info
+medialog.iconpicker.egg-info
 
-medialog.hyperlapse.egg-info/
+medialog.iconpickere.egg-info/
 
 Paste-1.7.5.1-py2.7.egg 
 
@@ -15,3 +15,11 @@ Paste*
 medialog.iconpicker.egg-info/not-zip-safe
 
 medialog.iconpicker.egg-info/namespace_packages.txt
+
+build
+
+*.gz
+
+*.zip
+
+medialog.iconpicker.egg-info/SOURCES.txt
