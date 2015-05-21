@@ -1,0 +1,5 @@
+<registry>
+<records interface="medialog.iconpicker.interfaces.IIconPickerSettings">
+<value key="iconset">fontawsome</value>
+</records>
+</registry>

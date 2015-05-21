@@ -9,9 +9,15 @@ License: GPL
 Description: Introduction
         ============
         
+        An iconpicker widget for Plone based on http://victor-valencia.github.io/bootstrap-iconpicker/
         
+        ![image](http://victor-valencia.github.io/bootstrap-iconpicker/bootstrap-iconpicker.png)
         
-        This product may contain traces of nuts.
+        To do:
+        Make it configurable, so you can choose between fonts
+        
+        Author:
+        Espen Moe-Nilssen
         
         Changelog
         =========

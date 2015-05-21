@@ -1,4 +1,4 @@
-README.txt
+README.rst
 setup.cfg
 setup.py
 medialog/__init__.py
@@ -12,6 +12,7 @@ medialog.iconpicker.egg-info/requires.txt
 medialog.iconpicker.egg-info/top_level.txt
 medialog/iconpicker/__init__.py
 medialog/iconpicker/behavior.py
+medialog/iconpicker/interfaces.py
 medialog/iconpicker/tests.py
 medialog/iconpicker/widgets/__init__.py
 medialog/iconpicker/widgets/widget.py

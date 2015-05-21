@@ -6,7 +6,7 @@ version = '0.1'
 setup(name='medialog.iconpicker',
       version=version,
       description="iconpicker for Plone",
-      long_description=open("README.txt").read() + "\n" +
+      long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -30,6 +30,7 @@ setup(name='medialog.iconpicker',
           'plone.behavior',
           'plone.directives.form',
           'collective.js.bootstrap',
+          'medialog.controlpanel'
           # -*- Extra requirements: -*-
       ],
       entry_points="""

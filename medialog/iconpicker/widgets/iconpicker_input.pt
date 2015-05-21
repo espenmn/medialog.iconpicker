@@ -1,18 +1,19 @@
 
 <html>
 <button                class="btn btn-default" 
-					   data-iconset="fontawsome"
  					   role="iconpicker"  
 					   tal:attributes="id string:${view/id};
                        name view/name;
-                       icon view/value;
+                       data-iconset view/iconset;
                        data-icon view/value;
                        value view/value;
                        disabled view/disabled;
                        alt view/alt;
                        accesskey view/accesskey;
-                       onselect view/onselect;" />
-                       
+                       onselect view/onselect;"  />
+<p> the font can be changed in the control panel. Avalable fonts are  glyphicon|ionicon|fontawesome|weathericon|mapicon|octicon|typicon|elusiveicon</p>
+              
+
 <input  type="hidden"  tal:attributes="id string:${view/id};
                        name view/name;
                        title view/title;
@@ -31,15 +32,13 @@
 <!-- Bootstrap -->
 <script type="text/javascript" src="++resource++collective.js.bootstrap/js/bootstrap.min.js"></script>
  
-<!-- Bootstrap-Iconpicker Iconset for Glyphicon -->
-<script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-glyphicon.min.js"></script>
-
-<!-- Bootstrap-Iconpicker for Fontawsome -->
-<script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.2.0.js"></script>
-
+<!-- font specific resources -->
+<tal:resources tal:define="iconset view/iconset" tal:replace="structure view/?iconset"/>
+ 
 <!-- Bootstrap-Iconpicker -->
 <link rel="stylesheet" href="++resource++medialog.iconpicker/bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"/>
 <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"></script>
 
-
 </html> 
+ 
+   

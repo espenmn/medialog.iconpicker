@@ -3,3 +3,4 @@ plone.app.dexterity
 plone.behavior
 plone.directives.form
 collective.js.bootstrap
+medialog.controlpanel
