@@ -27,4 +27,4 @@ class IIconPickerSettings(form.Schema):
         default=u"Choose iconset to be used for iconpicker")
         )
 
-alsoProvides(IIIconPickerSettings, IMedialogControlpanelSettingsProvider)
+alsoProvides(IIconPickerSettings, IMedialogControlpanelSettingsProvider)
