@@ -1,7 +1,13 @@
 Changelog
 =========
 
-0.1.1v (06 june 2015)
+0.1.1v (10 june 2015)
+————————————————————	
+
+- pinned collective.js.bootstrap to get it to work with Plone 4 [espenmn]
+
+
+0.1.1 (06 june 2015)
 ————————————————————	
 
 - fixed error (True) for Plone 4 [espenmn]
