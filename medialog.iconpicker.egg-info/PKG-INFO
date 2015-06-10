@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: medialog.iconpicker
-Version: 0.1
+Version: 0.1.1
 Summary: iconpicker for Plone
 Home-page: http://github.com/espenmn/medialog.iconpicker
 Author: Espen Moe-Nilssen
@@ -20,8 +20,14 @@ Description: Introduction
         Changelog
         =========
         
+        0.1.1v (06 june 2015)
+        ————————————————————	
+        
+        - fixed error (True) for Plone 4 [espenmn]
+        
+        
         0.1dev (22 may 2015)
-        -------------------
+        ————————————————————	
         
         - Initial release [espenmn]
         
