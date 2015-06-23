@@ -1,6 +1,12 @@
 Changelog
 =========
 
+0.3 (23 june 2015)
+————————————————————	
+
+- render widget adds correct font family name (class) [espenmn]
+
+
 0.2 (23 june 2015)
 ————————————————————	
 

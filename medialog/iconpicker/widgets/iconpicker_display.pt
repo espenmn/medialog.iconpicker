@@ -1,11 +1,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       tal:omit-tag="">
-      <i class="fa" 
-      	tal:define="klasse python: view.family_css + " " + view.value"
-      	tal:attributes="class klasse"> </i>
+      
+      <span tal:define="family view/family_css; 
+            icon view/value;
+            klasse python: family + ' iconfont ' + icon"
+        tal:attributes="class klasse"> </span>
         
 	  <!-- font specific resources -->
-	  <!--tal:resources tal:define="iconset view/iconset" tal:replace="structure view/?iconset"/-->
+	  <tal:resources tal:define="iconset view/iconset" tal:replace="structure view/?iconset"/>
  </html>
  

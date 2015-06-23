@@ -16,22 +16,27 @@ class IIconPickerWidget(interfaces.IWidget):
 
 class IconPickerWidget(text.TextWidget):
     """Iconpicker Widget"""
-    
-    #maxlength = 50
-    #size = 5
-    
+
     zope.interface.implementsOnly(IIconPickerWidget)
     
     def family_css(self):
         #return css_family_class, like fa, wi
         iconset = self.iconset()
-        if iconset == 'glyphicon' return 'glyphicon'
-        if iconset == 'mapicon' return 'map-icons'
-        if iconset == 'typicon' return 'typcn'
-        if iconset == 'ionicon' return 'ionicons'
-        if iconset == 'weathericon' return 'wi'
-        if iconset == 'octicon' return 'octicon'
-        if iconset == 'elusiveicon' return 'el-icon'
+        if iconset == 'glyphicon':
+             return 'glyphicon'
+        if iconset == 'mapicon':
+            return 'map-icons'
+        if iconset == 'typicon':
+            return 'typcn'
+        if iconset == 'ionicon':
+            return 'ionicons'
+        if iconset == 'weathericon':
+            return 'wi'
+        if iconset == 'octicon' :
+            return 'octicon'
+        if iconset == 'elusiveicon':
+            return 'el-icon'
+        
         return 'fa'
         
     

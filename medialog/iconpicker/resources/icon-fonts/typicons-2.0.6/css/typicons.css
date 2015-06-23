@@ -13,7 +13,7 @@
 }
  
 /* :before psuedo-selector inserts and styles icon */
-.typcn:before {
+.typcn {
   font-family: 'typicons';
   font-style: normal;
   font-weight: normal;
