@@ -2,7 +2,7 @@
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       tal:omit-tag="">
       <i class="fa" 
-      	tal:define="klasse python: 'fa ' + view.value"
+      	tal:define="klasse python: view.family_css + " " + view.value"
       	tal:attributes="class klasse"> </i>
         
 	  <!-- font specific resources -->
