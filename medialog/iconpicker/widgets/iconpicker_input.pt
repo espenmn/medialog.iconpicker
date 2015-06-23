@@ -32,8 +32,9 @@
     type="text/javascript" src="++resource++collective.js.bootstrap/js/bootstrap.min.js"></script>
 
 <!-- Bootstrap JS, loaded on condition-- shoud work with Plone 4>
-<!--script tal:condition="view/loadbootstrap"
-    type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-3.2.0/js/bootstrap.min.js"></script-->
+<!-- need a way to check for plone version -->
+<script tal:condition="view/loadbootstrap"
+    type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-3.2.0/js/bootstrap.min.js"></script>
  
 <!-- font specific resources -->
 <tal:resources tal:define="iconset view/iconset" tal:replace="structure view/?iconset"/>
