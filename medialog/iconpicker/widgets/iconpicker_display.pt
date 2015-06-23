@@ -1,7 +1,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       tal:omit-tag="">
-      <i class="iconpicker" tal:content="view/value">I</i>
+      <i class="fa" tal:content="view/value">I</i>
         
 	  <!-- font specific resources -->
 	  <tal:resources tal:define="iconset view/iconset" tal:replace="structure view/?iconset"/>
