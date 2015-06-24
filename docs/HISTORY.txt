@@ -1,6 +1,13 @@
 Changelog
 =========
 
+
+0.3.2 (25 june 2015)
+————————————————————	
+
+- Loading old bootstrap for Plone 4 [espenmn]
+
+
 0.3.1 (25 june 2015)
 ————————————————————	
 
