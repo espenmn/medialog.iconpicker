@@ -48,7 +48,7 @@ class IIconPickerSettings(form.Schema):
 
     placement = schema.Choice(
         title=_(u"label_placement", default=u"Placement"),
-        values=[('top'), ('bottom'), ('right'),]
+        values=[('left'), ('top'), ('bottom'), ('right'),]
         )
 
         

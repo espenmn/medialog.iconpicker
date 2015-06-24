@@ -10,6 +10,7 @@ from plone import api
 from medialog.iconpicker.interfaces import IIconPickerSettings
 
 
+
 class IIconPickerWidget(interfaces.IWidget):
     """Iconpicker widget."""
  
@@ -39,6 +40,13 @@ class IconPickerWidget(text.TextWidget):
         
         return 'fa'
         
+    def plone5(self):
+        try:
+            from Products.CMFPlone.factory import _IMREALLYPLONE5
+            return 1
+        except ImportError:
+            return 0
+
     
     def iconset(self):
         """Returns current iconset name This is also used for loading the resources below"""
