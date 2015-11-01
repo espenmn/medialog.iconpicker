@@ -35,6 +35,12 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+    <browser:page
+        for="*"
+        name="fontload"
+        template="fontload.pt"
+        permission="zope2.View"
+    />
  
 
 </configure>

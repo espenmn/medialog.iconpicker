@@ -1,5 +1,5 @@
 from zope import schema
-#from plone.directives import dexterity
+from zope.interface import Interface
 from plone.directives import form
 from plone.autoform.interfaces import IFormFieldProvider
 from zope.interface import alsoProvides
@@ -24,6 +24,6 @@ class IIconPickerBehavior(form.Schema):
     form.widget(
             iconfield=IconPickerFieldWidget,
     )
-
+    
 alsoProvides(IIconPickerBehavior, IFormFieldProvider)
 
