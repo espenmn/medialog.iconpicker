@@ -38,6 +38,7 @@
     <browser:page
         for="*"
         name="fontload"
+        class=".fontload.FontLoad"
         template="fontload.pt"
         permission="zope2.View"
     />
