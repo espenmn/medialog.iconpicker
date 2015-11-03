@@ -6,7 +6,7 @@ class FontLoad(BrowserView):
     """ """
     
     def value(self):
-        return self.context.iconfield
+    	return self.context
 
     def family_css(self):
         #return css_family_class, like fa, wi
