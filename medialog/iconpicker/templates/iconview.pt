@@ -10,7 +10,7 @@
 <metal:content-core fill-slot="content-core">
  	<div class="features" >
 		<div tal:repeat="item  context/@@folderListing">
-		  <a href="item/url">
+		  <a href="" tal:attributes="href item/getURL|item/absolute_url">
 			<h2>
 			<tal:icon tal:condition="exists:item/iconfield">
 				<tal:icon tal:replace="structure item/iconfield/@@iconload" />

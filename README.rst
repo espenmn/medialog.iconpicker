@@ -18,7 +18,7 @@ Usage
 -----
 - A widget to be uses in your custom views
 - Helper view to load the selected fonts/icons: /@@fontload
-- A view to load the icons: <tal:icons tal:replce="structure item/iconfield/@@iconload" />
+- A view to load the icons: <tal:icons tal:replace="structure item/iconfield/@@iconload" />
 - A simple example view: http:/site/folder/@@iconview 
 
 
