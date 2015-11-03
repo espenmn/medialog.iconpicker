@@ -1,0 +1,4 @@
+<span tal:define="family view/family_css; 
+    icon view/value;
+    klasse python: family + ' iconfont ' + icon"
+    tal:attributes="class klasse"> </span>

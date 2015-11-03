@@ -6,14 +6,40 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="medialog.iconpicker">
-    
+  
+  
+  <i18n:registerTranslations directory="locales" />  
     
   <!-- Include configuration for dependencies listed in setup.py -->
   <includeDependencies package="." />
  
   <include package=".widgets" />
+  <!--include package=".browser" /-->
 
-    
+  <browser:page
+        for="*"
+        name="fontload"
+        class=".views.FontLoad"
+        template="templates/fontload.pt"
+        permission="zope2.View"
+    />
+
+    <browser:page
+        for="*"
+        name="iconload"
+        class=".views.FontLoad"
+        template="templates/iconload.pt"
+        permission="zope2.View"
+    />
+ 
+     <browser:page
+        for="*"
+        name="iconview"
+        template="templates/iconview.pt"
+        permission="zope2.View"
+    />
+  
+ 
   <!-- Include behavior -->
   <include file="behaviors.zcml" />
 
@@ -23,7 +49,6 @@
     name="medialog.iconpicker"
     directory="resources" />
 
-  <i18n:registerTranslations directory="locales" />
 
   <!-- Register an extension profile to make the product installable in Plone -->
   <genericsetup:registerProfile
@@ -34,13 +59,5 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
-    <browser:page
-        for="*"
-        name="fontload"
-        class=".fontload.FontLoad"
-        template="fontload.pt"
-        permission="zope2.View"
-    />
- 
 
 </configure>

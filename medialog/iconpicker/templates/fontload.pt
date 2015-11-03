@@ -1,0 +1,2 @@
+<!-- font specific resources -->
+<tal:resources tal:define="iconset view/iconset" tal:replace="structure view/?iconset"/>
