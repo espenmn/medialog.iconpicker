@@ -1,11 +1,7 @@
-<tal:fontload tal="replace structure">
+<span tal:define="family view/family_css; 
+    icon view/value;
+    klasse python: family + ' iconfont ' + icon"
+    tal:attributes="class klasse"> </span>
 
-      <span tal:define="family view/family_css; 
-            icon view/value;
-            klasse python: family + ' iconfont ' + icon"
-        tal:attributes="class klasse"> </span>
-        
-	  <!-- font specific resources -->
-	  <tal:resources tal:define="iconset view/iconset" tal:replace="structure view/?iconset"/>
-	  
-</tal:fontload">
+<!-- font specific resources -->
+<tal:resources tal:define="iconset view/iconset" tal:replace="structure view/?iconset"/>

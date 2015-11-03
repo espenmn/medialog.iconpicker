@@ -25,8 +25,7 @@
 
   <i18n:registerTranslations directory="locales" />
 
-  <!-- Register an extension profile to make the product installable
-       in Plone -->
+  <!-- Register an extension profile to make the product installable in Plone -->
   <genericsetup:registerProfile
       name="default"
       title="Iconpicker for Plone"

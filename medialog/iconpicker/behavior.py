@@ -11,8 +11,7 @@ from medialog.iconpicker.widgets.widget import IconPickerFieldWidget
 _ = MessageFactory('medialog.iconpicker')
 
 
-from plone import api
-from medialog.iconpicker.interfaces import IIconPickerSettings
+
 
 
 class IIconPickerBehavior(form.Schema):
@@ -29,13 +28,7 @@ class IIconPickerBehavior(form.Schema):
     form.widget(
             iconfield=IconPickerFieldWidget,
     )
-    
-    @property
-    def iconset():
-        """Returns current iconset name This is also used for loading the resources below"""
-        import pdb; pdb.set_trace()
-        return api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.iconset')
-    
+
 alsoProvides(IIconPickerBehavior, IFormFieldProvider)
 
 

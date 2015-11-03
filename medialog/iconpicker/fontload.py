@@ -4,6 +4,9 @@ from medialog.iconpicker.interfaces import IIconPickerSettings
 
 class FontLoad(BrowserView):
     """ """
+    
+    def value(self):
+        return self.context.iconfield
 
     def family_css(self):
         #return css_family_class, like fa, wi
@@ -22,6 +25,7 @@ class FontLoad(BrowserView):
             return 'octicon'
         if iconset == 'elusiveicon':
             return 'el-icon'
+        return 'fa'
         
 
     def iconset(self):
