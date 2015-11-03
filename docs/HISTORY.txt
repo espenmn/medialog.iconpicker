@@ -2,6 +2,15 @@ Changelog
 =========
 
 
+0.4 (3 oct 2015)
+————————————————————	
+
+- Added (example and 'helper') views
+- Font files can be loaded by /@@fontload
+- icons can be shown in listing templates with: with <tal:icon tal:replace="structure item/iconfield/@@iconload" />
+- there is a simple example view ( http:/site/folder/@@iconview
+
+
 0.3.2 (25 june 2015)
 ————————————————————	
 
