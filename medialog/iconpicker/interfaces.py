@@ -11,6 +11,13 @@ _ = MessageFactory('medialog.iconpicker')
 
 class IIconPickerSettings(form.Schema):
     """Adds settings to medialog.controlpanel
+    https://erikflowers.github.io/weather-icons/
+	http://www.typicons.com/
+	https://octicons.github.com/
+	http://ionicons.com/
+	http://elusiveicons.com/cheatsheet/
+	https://fortawesome.github.io/Font-Awesome/icons/
+	http://map-icons.com/
     """
 
     form.fieldset(
