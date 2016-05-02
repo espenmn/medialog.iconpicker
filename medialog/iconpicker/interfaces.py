@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+# Default ENCODING = 'UTF-8'
+
+####################
 from z3c.form import interfaces
 from zope import schema
 #from zope.interface import Interface
@@ -45,14 +49,14 @@ class IIconPickerSettings(form.Schema):
         <a href="http://map-icons.com/">map-icons</a>
         """),
         values=[('glyphicon'), ('ionicon'), ('fontawesome'), ('weathericon'), ('mapicon'), ('octicon'), ('typicon'), ('elusiveicon'),]
-        )
+    )
     
-    loadbootstrap = schema.Bool (
+    loadbootstrap = schema.Bool(
      	title=_(u"label_loadbootstrap", default=u"Load Bootstrap"),
         description=_(u"help_loadbootstrap", 
             default=u"""Loads ++resource++collective.js.bootstrap/js/bootstrap.min.js. <br/>
             You probably want to do this in your diazo theme instead.""")
-        )
+    )
         
     cols = schema.Int (
     	title=_(u"label_columns", default=u"Columns"),
@@ -65,7 +69,7 @@ class IIconPickerSettings(form.Schema):
     placement = schema.Choice(
         title=_(u"label_placement", default=u"Placement"),
         values=[('left'), ('top'), ('bottom'), ('right'),]
-        )
+    )
 
         
 alsoProvides(IIconPickerSettings, IMedialogControlpanelSettingsProvider)
