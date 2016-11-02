@@ -10,9 +10,14 @@ Installation
 ============
 Add it in the add-ons control panel
 
-Behavior
+Iconpicker Behavior
 --------
 In the dexterity control panel: add 'iconpicker behavior'
+
+Colorpicker Behavior
+--------
+In the dexterity control panel: add 'colorpicker behavior'
+
 
 Usage
 -----
@@ -20,6 +25,8 @@ Usage
 - Helper view to load the selected fonts/icons: /@@fontload
 - A view to load the icons: <tal:icons tal:replace="structure item/iconfield/@@iconload" />
 - A simple example view: http:/site/folder/@@iconview 
+
+If you add the colorpicker behavior, you can choose color of the icon
 
 
 Control panel
