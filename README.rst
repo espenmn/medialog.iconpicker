@@ -10,6 +10,12 @@ Installation
 ============
 Add it in the add-ons control panel
 
+Controlpanel
+--------
+Important: You need to choose font in:
+http://yoursite/@@medialog_controlpanel
+
+
 Iconpicker Behavior
 --------
 In the dexterity control panel: add 'iconpicker behavior'
