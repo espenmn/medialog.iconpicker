@@ -114,9 +114,11 @@ class IconPickerWidget(text.TextWidget):
         """
 
     def color(self):
-    	if self.context.color:
-    		return '#' + self.context.color
-        return ""
+        context = self.context
+        color = getattr(context, "color", None)
+        if color: 
+            return '#' + color
+        return "inherit"
 
         
 def IconPickerFieldWidget(field, request):
