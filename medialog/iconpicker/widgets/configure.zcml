@@ -25,6 +25,30 @@
       layer="z3c.form.interfaces.IFormLayer"
       template="iconpicker_input.pt" />
       
+      
+
+  <class class=".widget.ColorPickerWidget">
+    <require
+        permission="zope.Public"
+        interface="medialog.iconpicker.widgets.widget.IColorPickerWidget"
+        />
+  </class>
+
+  <!--  Display widget  -->
+  <z3c:widgetTemplate
+      mode="display"
+      widget="medialog.iconpicker.widgets.widget.IColorPickerWidget"
+      layer="z3c.form.interfaces.IFormLayer"
+      template="colorpicker_display.pt" />
+
+  <!--  Input (edit) widget  -->
+  <z3c:widgetTemplate
+      mode="input"
+      widget="medialog.iconpicker.widgets.widget.IColorPickerWidget"
+      layer="z3c.form.interfaces.IFormLayer"
+      template="colorpicker_input.pt" />
+      
+      
 </configure>
 
 

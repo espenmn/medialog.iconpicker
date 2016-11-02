@@ -7,11 +7,9 @@ from zope.interface import alsoProvides
 from zope.i18nmessageid import MessageFactory
 
 from medialog.iconpicker.widgets.widget import IconPickerFieldWidget
+from medialog.iconpicker.widgets.widget import ColorPickerFieldWidget
 
 _ = MessageFactory('medialog.iconpicker')
-
-
-
 
 
 class IIconPickerBehavior(form.Schema):
@@ -30,5 +28,23 @@ class IIconPickerBehavior(form.Schema):
     )
 
 alsoProvides(IIconPickerBehavior, IFormFieldProvider)
+
+
+class IColorPickerBehavior(form.Schema):
+    """ A color field"""
+    
+    
+    color = schema.TextLine(
+        title = _("color", default=u"Color"),
+        required = False,
+        description = _("help_color",
+                      default="Choose Color"),
+    )
+
+    form.widget(
+            color=ColorPickerFieldWidget,
+    )
+
+alsoProvides(IColorPickerBehavior, IFormFieldProvider)
 
 

@@ -112,7 +112,31 @@ class IconPickerWidget(text.TextWidget):
         <link rel="stylesheet" href="++resource++medialog.iconpicker/icon-fonts/elusive-icons-2.0.0/css/elusive-icons.min.css"/>
         <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-elusiveicon-2.0.0.min.js"></script>
         """
+
+    def color(self):
+    	if self.context.color:
+    		return '#' + self.context.color
+        return ""
+
         
 def IconPickerFieldWidget(field, request):
     """IFieldWidget factory for IconPickerWidget."""
     return widget.FieldWidget(field, IconPickerWidget(request))
+    
+    
+    
+    
+class IColorPickerWidget(interfaces.IWidget):
+    """Colorpicker widget."""
+ 
+
+class ColorPickerWidget(text.TextWidget):
+    """Colorpicker Widget"""
+
+    zope.interface.implementsOnly(IColorPickerWidget)
+    
+    
+def ColorPickerFieldWidget(field, request):
+    """IFieldWidget factory for ColorPickerWidget."""
+    return widget.FieldWidget(field, ColorPickerWidget(request))
+
