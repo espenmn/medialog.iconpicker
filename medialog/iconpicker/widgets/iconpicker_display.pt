@@ -5,8 +5,9 @@
       <span tal:define="family view/family_css; 
             icon view/value;
             color view/color;
+            style python:'color:' + color;
             klasse python: family  + ' iconfont ' + icon"
-        tal:attributes="class klasse; color color"> </span>
+        tal:attributes="class klasse; style style"> </span>
         
 	  <!-- font specific resources -->
 	  <tal:resources tal:define="iconset view/iconset" tal:replace="structure view/?iconset"/>
