@@ -64,7 +64,7 @@ class IIconTile(model.Schema):
     )
 
 
-class FragmentTile(Tile):
+class IconTile(Tile):
     """A tile that displays icon and some text"""
 
     def __call__(self):
