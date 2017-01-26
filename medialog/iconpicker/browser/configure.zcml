@@ -14,7 +14,7 @@
     <include package="plone.tiles" file="meta.zcml" />
 
     <plone:tile
-        name="collective.themefragments.fragment"
+        name="iconpickertile"
         title="Iconpicker tile"
         description="Displays icon and some text"
         for="*"
@@ -25,15 +25,5 @@
         add_permission="cmf.ModifyPortalContent"
         />
 
-  <!-- Profile -->
-  <!-- genericsetup:registerProfile
-      name="default"
-      title="Iconpicker tile"
-      description="Add theme fragment tile for Plone Mosaic"
-      directory="profiles/default"
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      i18n:attributes="title description"
-      zcml:condition="installed plone.app.mosaic"
-      /-->
-
+</configure>
 </configure>
