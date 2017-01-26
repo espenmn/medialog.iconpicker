@@ -25,5 +25,5 @@
         add_permission="cmf.ModifyPortalContent"
         />
 
-</configure>
+    </configure>
 </configure>
