@@ -14,7 +14,7 @@
   <includeDependencies package="." />
  
   <include package=".widgets" />
-  <!--include package=".browser" /-->
+  <include package=".browser" />
 
   <browser:page
         for="*"
