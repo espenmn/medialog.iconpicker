@@ -6,6 +6,7 @@ from plone.app.tiles.browser.edit import DefaultEditForm
 from plone.app.tiles.browser.edit import DefaultEditView
 from plone.memoize.view import memoize
 from plone.supermodel import model
+from plone.directives import form
 from plone.tiles import Tile
 from plone.tiles.data import TransientTileDataManager
 from plone.tiles.interfaces import ITileDataManager
