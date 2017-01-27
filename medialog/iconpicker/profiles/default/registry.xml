@@ -13,7 +13,8 @@
  <value_type type="plone.registry.field.TextLine" />
  </field>
  <value purge="false">
- <element>medialog.iconpicker.tile</value>
+ <element>medialog.iconpicker.tile</element>
+ </value>
 </record>
 
 
