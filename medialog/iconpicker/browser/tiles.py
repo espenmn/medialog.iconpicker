@@ -61,12 +61,12 @@ class IIconTile(model.Schema):
     )
 
 
-class IconTile(Tile):
-    """A tile that displays icon and some text"""
-
-    def __call__(self):
-        self.update()
-        return 'xxx'	
+#class IconTile(Tile):
+#    """A tile that displays icon and some text"""
+#
+#    def __call__(self):
+#        self.update()
+#        return 'xxx'	
 
 
 #class IconTileAddView(DefaultAddView):

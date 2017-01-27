@@ -19,7 +19,6 @@
         description="Displays icon and some text"
         for="*"
         schema=".tiles.IIconTile"
-        class=".tiles.IconTile"
         template="icontile.pt"
         permission="zope2.View"
         add_permission="cmf.ModifyPortalContent"
