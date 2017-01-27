@@ -1,11 +1,9 @@
 <html>
 <body>
- 
- 123445sadf
- as
- dfasd
- fas
- dfasd
- f
+    <p><p tal:content="view/iconfield" /> </p>
+
+    color
+    title
+    text
 </body>
 </html>
