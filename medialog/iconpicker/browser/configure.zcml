@@ -10,8 +10,15 @@
 
   <!-- Tile -->
   <!-- configure zcml:condition="installed plone.tiles" -->
-    <include package="plone.app.mosaic" />
-    <include package="plone.tiles" file="meta.zcml" />
+    
+  <!-- Include our dependencies -->
+  <include package="plone.app.tiles" />
+  <include package="zope.component" file="meta.zcml" />
+  <include package="zope.security" file="meta.zcml" />
+
+  <include package="plone.app.mosaic" />
+  <include package="plone.tiles" file="meta.zcml" />
+  
 
     <plone:tile
         name="medialog.iconpicker.tile"
@@ -19,6 +26,7 @@
         description="Displays icon and some text"
         for="*"
         schema=".tiles.IIconTile"
+        class=".tiles.IconTile"
         template="icontile.pt"
         permission="zope2.View"
         add_permission="cmf.ModifyPortalContent"

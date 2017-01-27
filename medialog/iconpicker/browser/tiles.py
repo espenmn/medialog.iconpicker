@@ -11,7 +11,15 @@ from plone.tiles.data import TransientTileDataManager
 from plone.tiles.interfaces import ITileDataManager
 from zope import schema
 from zope.i18nmessageid import MessageFactory
-from zope.interface import provider
+#from zope.interface import provider
+
+
+#????
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from zope.publisher.browser import BrowserView
+from zope.schema import getFields
+from plone.tiles.interfaces import ITileType
+
 
 _ = MessageFactory('medialog.iconpicker')
 
@@ -61,14 +69,14 @@ class IIconTile(model.Schema):
     )
 
 
-#class IconTile(Tile):
-#    """A tile that displays icon and some text"""
-#
-#    def __call__(self):
-#        self.update()
-#        return 'xxx'	
+class IconTile(Tile):
+    """A tile that displays icon and some text"""
 
-
+    def __init__(self, context, request):
+        super(IconTile, self).__init__(context, request)
+        
+        
+        
 #class IconTileAddView(DefaultAddView):
 #    form = IconTileAddForm
 
