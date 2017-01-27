@@ -80,6 +80,31 @@ class IconTile(Tile):
         data = super(IconTile, self).data
         return data
         
+    @property
+    def family_css(self):
+        #return css_family_class, like fa, wi
+        iconset = self.iconset()
+        if iconset == 'glyphicon':
+             return 'glyphicon'
+        if iconset == 'mapicon':
+            return 'map-icons'
+        if iconset == 'typicon':
+            return 'typcn'
+        if iconset == 'ionicon':
+            return 'ionicons'
+        if iconset == 'weathericon':
+            return 'wi'
+        if iconset == 'octicon' :
+            return 'octicon'
+        if iconset == 'elusiveicon':
+            return 'el-icon'
+        
+        return 'fa'
+        
+    def iconset(self):
+        """Returns current iconset name This is also used for loading the resources below"""
+        return api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.iconset')
+        
         
         
 #class IconTileAddView(DefaultAddView):

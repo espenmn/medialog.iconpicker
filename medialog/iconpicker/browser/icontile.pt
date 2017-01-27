@@ -1,10 +1,8 @@
 <html>
 <body>
-  <span color="#${view/data/color}">
-    <tal:icon tal:condition="exists:     view/data/iconfield">
-		<tal:icon tal:replace="structure view/data/iconfield/@@iconload" />
-    </tal:icon>
-  </span>
+    <span class="${view/family_css} iconfont ${view/iconfield}"
+         style="color: ${view/data/color}"> </span>
+	
   <p tal:condition="view/data/title">${view/data/title}</p>
   <p tal:condition="view/data/title">${view/data/text}</p>
  
