@@ -1,3 +1,4 @@
+<registry>
 <records interface="medialog.iconpicker.interfaces.IIconPickerSettings">
 <value key="iconset">fontawesome</value>
 <value key="loadbootstrap">True</value>
@@ -6,7 +7,6 @@
 <value key="placement">right</value>
 </records>
 
-<registry>
 <record name="plone.app.tiles">
  <field type="plone.registry.field.List">
  <title>Tiles</title>
@@ -15,8 +15,8 @@
  <value purge="false">
  <element>medialog.iconpicker.tile</value>
  </value>
- </record>
-</registry>
+</record>
+
 
 <records prefix="plone.app.mosaic.app_tiles.icontile"
  interface="plone.app.mosaic.interfaces.ITile">
@@ -31,3 +31,4 @@
  <value key="rich_text">false</value>
  <value key="weight">20</value>
 </records>
+</registry>
