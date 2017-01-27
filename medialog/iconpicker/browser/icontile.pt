@@ -1,12 +1,12 @@
 <html>
 <body>
   <span color="#${view/data/color}">
-    <tal:icon tal:condition="exists:view/data/iconfield">
+    <tal:icon tal:condition="exists:     view/data/iconfield">
 		<tal:icon tal:replace="structure view/data/iconfield/@@iconload" />
     </tal:icon>
   </span>
-  <p tal:condition="view/data/title">${view/data/title}/p>
-  <p tal:condition="view/data/title">${view/data/text}/p>
+  <p tal:condition="view/data/title">${view/data/title}</p>
+  <p tal:condition="view/data/title">${view/data/text}</p>
  
 </body>
 </html>
