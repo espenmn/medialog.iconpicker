@@ -5,7 +5,7 @@
          style="color: #${view/data/color}"> </span>
 	
   <p tal:condition="view/data/title">${view/data/title}</p>
-  <p tal:condition="view/data/title">${view/data/text}</p>
+  <p tal:condition="view/data/text">${view/data/text}</p>
 </span>
 </body>
 </html>
