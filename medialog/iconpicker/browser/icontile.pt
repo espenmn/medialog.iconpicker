@@ -1,6 +1,6 @@
 <html>
 <body>
-<span class="${view/data/css_class">
+<span class="${view/data/css_class}">
     <span class="${view/family_css} iconfont ${view/data/iconfield}"
          style="color: #${view/data/color}"> </span>
 	
