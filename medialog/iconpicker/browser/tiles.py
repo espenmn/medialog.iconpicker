@@ -75,6 +75,11 @@ class IconTile(Tile):
     def __init__(self, context, request):
         super(IconTile, self).__init__(context, request)
         
+    @property
+    def data(self):
+        data = super(IconTile, self).data
+        return data
+        
         
         
 #class IconTileAddView(DefaultAddView):

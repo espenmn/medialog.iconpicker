@@ -1,9 +1,14 @@
 <html>
 <body>
-    <p><p tal:content="view/iconfield" /> </p>
+  <div tal:attributes="color" tal:content="view/data/color">
+  <tal:icon tal:condition="exists:view/data/iconfield">
+		<tal:icon tal:replace="structure view/date/iconfield/@@iconload" />
+  </tal:icon>
 
-    color
-    title
-    text
+    <p tal:condition="view/data/title"><p tal:content="view/data/title" /></p>
+    <p tal:condition="view/data/title"><p tal:content="view/data/iconfield" /></p>
+    <p tal:condition="view/data/title"><p tal:content="view/data/text" /></p>
+    <p><p tal:content="view/data/color" /></p>
+    </div>
 </body>
 </html>
