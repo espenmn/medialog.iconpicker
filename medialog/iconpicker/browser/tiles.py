@@ -69,7 +69,7 @@ class IIconTile(model.Schema):
                       default="Text"),
     )
     
-   css_class =schema.TextLine(
+    css_class =schema.TextLine(
         title = _("css class", default=u"CSS class"),
         required = False,
         description = _("help_css_class",
