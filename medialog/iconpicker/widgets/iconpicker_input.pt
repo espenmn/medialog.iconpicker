@@ -1,6 +1,6 @@
 <html>
 <body>
-
+<span class="ontop">
 <button                class="btn btn-default" 
  					   role="iconpicker"  
 					   tal:attributes="id string:${view/id};
@@ -53,6 +53,7 @@
 <script tal:condition="view/loadbootstrap"
     type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-3.2.0/js/bootstrap.min.js"></script>
 </tal:plone5>
+</span>
 
 </body>
 </html>
