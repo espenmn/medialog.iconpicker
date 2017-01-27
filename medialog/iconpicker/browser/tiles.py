@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
-from plone.app.theming.utils import isThemeEnabled
-from plone.app.tiles.browser.add import DefaultAddForm
-from plone.app.tiles.browser.add import DefaultAddView
-from plone.app.tiles.browser.edit import DefaultEditForm
-from plone.app.tiles.browser.edit import DefaultEditView
+#from plone.app.tiles.browser.add import DefaultAddForm
+#from plone.app.tiles.browser.add import DefaultAddView
+#from plone.app.tiles.browser.edit import DefaultEditForm
+#from plone.app.tiles.browser.edit import DefaultEditView
 from plone.memoize.view import memoize
 from plone.supermodel import model
 from plone.directives import form

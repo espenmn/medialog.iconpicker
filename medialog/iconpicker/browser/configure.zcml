@@ -9,12 +9,12 @@
 
 
   <!-- Tile -->
-  <configure zcml:condition="installed plone.tiles">
-
+  <!-- configure zcml:condition="installed plone.tiles" -->
+    <include package="plone.app.mosaic" />
     <include package="plone.tiles" file="meta.zcml" />
 
     <plone:tile
-        name="iconpickertile"
+        name="medialog.iconpicker.tile"
         title="Iconpicker tile"
         description="Displays icon and some text"
         for="*"
@@ -25,5 +25,5 @@
         add_permission="cmf.ModifyPortalContent"
         />
 
-    </configure>
+     <!--/configure-->
 </configure>
