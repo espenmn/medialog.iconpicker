@@ -1,6 +1,6 @@
 <html>
 <body>
-  <span tal:attributes="color view/data/color">
+  <span color="#${view/data/color}">
     <tal:icon tal:condition="exists:view/data/iconfield">
 		<tal:icon tal:replace="structure view/data/iconfield/@@iconload" />
     </tal:icon>
