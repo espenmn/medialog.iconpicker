@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+
+from plone import api
 from plone.app.tiles.browser.add import DefaultAddForm
 from plone.app.tiles.browser.add import DefaultAddView
 from plone.app.tiles.browser.edit import DefaultEditForm
@@ -26,8 +28,7 @@ _ = MessageFactory('medialog.iconpicker')
  
 from medialog.iconpicker.widgets.widget import IconPickerFieldWidget
 from medialog.iconpicker.widgets.widget import ColorPickerFieldWidget
-
-
+from medialog.iconpicker.interfaces import IIconPickerSettings
 
 
 class IIconTile(model.Schema):
