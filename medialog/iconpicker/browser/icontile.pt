@@ -1,6 +1,6 @@
 <html>
 <body>
-    <!-- p tal:content="view/title" /-->
+    <p tal:content="view/title" />
  123445
 </body>
 </html>

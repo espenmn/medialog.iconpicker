@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-#from plone.app.tiles.browser.add import DefaultAddForm
-#from plone.app.tiles.browser.add import DefaultAddView
-#from plone.app.tiles.browser.edit import DefaultEditForm
-#from plone.app.tiles.browser.edit import DefaultEditView
+from plone.app.tiles.browser.add import DefaultAddForm
+from plone.app.tiles.browser.add import DefaultAddView
+from plone.app.tiles.browser.edit import DefaultEditForm
+from plone.app.tiles.browser.edit import DefaultEditView
 from plone.memoize.view import memoize
 from plone.supermodel import model
 from plone.directives import form
@@ -15,8 +15,6 @@ from zope.interface import provider
 
 _ = MessageFactory('medialog.iconpicker')
 
- 
- 
  
 from medialog.iconpicker.widgets.widget import IconPickerFieldWidget
 from medialog.iconpicker.widgets.widget import ColorPickerFieldWidget
@@ -70,3 +68,10 @@ class IconTile(Tile):
         self.update()
         return 'xxx'	
 
+
+#class IconTileAddView(DefaultAddView):
+#    form = IconTileAddForm
+
+
+#class IconTileEditView(DefaultEditView):
+#    form = IconTileEditForm
