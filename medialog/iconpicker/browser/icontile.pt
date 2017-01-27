@@ -5,9 +5,8 @@
 		<tal:icon tal:replace="structure view/data/iconfield/@@iconload" />
     </tal:icon>
   </span>
-  <p tal:condition="view/data/title"><p tal:content="view/data/title" /></p>
-  <p tal:condition="view/data/title"><p tal:content="view/data/iconfield" /></p>
-  <p tal:condition="view/data/title"><p tal:content="view/data/text" /></p>
+  <p tal:condition="view/data/title">${view/data/title}/p>
+  <p tal:condition="view/data/title">${view/data/text}/p>
  
 </body>
 </html>
