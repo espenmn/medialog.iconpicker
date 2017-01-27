@@ -68,6 +68,13 @@ class IIconTile(model.Schema):
         description = _("help_text",
                       default="Text"),
     )
+    
+   css_class =schema.TextLine(
+        title = _("css class", default=u"CSS class"),
+        required = False,
+        description = _("help_css_class",
+                      default="CSS Class"),
+    )
 
 
 class IconTile(Tile):
