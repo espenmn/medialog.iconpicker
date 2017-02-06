@@ -66,6 +66,12 @@ class IconPickerWidget(text.TextWidget):
         #get settings from control panel / registry
         return api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.loadbootstrap')
 
+
+    def medialogfont(self):
+        return """
+        <link rel="stylesheet" href="++resource++medialog.iconpicker/icon-fonts/medialogfont/medialogfont.css"/>
+        """
+        
     def glyphicon(self):
         return """
         <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-glyphicon.min.js"></script>

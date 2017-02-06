@@ -1,0 +1,24 @@
+{
+  "name": "medialogfont",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "3c607bc388e25dd581eccea3a8993666",
+      "css": "1486407141_miscellaneous-78",
+      "code": 59392,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M833.3 0H166.7C141.7 0 125 16.7 125 41.7V958.3C125 983.3 141.7 1000 166.7 1000H833.3C858.3 1000 875 983.3 875 958.3V41.7C875 16.7 858.3 0 833.3 0ZM791.7 916.7H208.3V83.3H791.7V916.7ZM458.3 625V708.3H541.7V625C625 625 666.7 579.2 666.7 500 666.7 408.3 583.3 375 500 250 416.7 375 333.3 408.3 333.3 500 333.3 579.2 375 625 458.3 625Z",
+        "width": 1000
+      },
+      "search": [
+        "1486407141_miscellaneous-78"
+      ]
+    }
+  ]
+}
