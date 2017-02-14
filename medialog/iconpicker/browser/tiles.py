@@ -129,7 +129,7 @@ class IMultiIconTile(model.Schema):
     iconpairs = schema.Tuple(
         title = _("iconpairs", default=u"Iconpairs"),
         required = False,
-        value_type= schema(IPair),
+        value_type= IPair,
     )
 
 class IconTile(Tile):
