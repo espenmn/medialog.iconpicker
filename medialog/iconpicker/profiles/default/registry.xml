@@ -18,9 +18,7 @@
 <value purge="false">
  <element>medialog.iconpicker.tile</element>
  </value>
-
-
-@/record>
+</record>
 
 
 <records prefix="plone.app.mosaic.app_tiles.icontile"
