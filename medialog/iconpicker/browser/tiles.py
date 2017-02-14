@@ -23,6 +23,10 @@ from zope.schema import getFields
 from plone.tiles.interfaces import ITileType
 
 
+from collective.z3cform.datagridfield import DataGridFieldFactory 
+from collective.z3cform.datagridfield import DictRow
+
+
 _ = MessageFactory('medialog.iconpicker')
 
  
@@ -126,10 +130,12 @@ class IMultiIconTile(model.Schema):
                       default="CSS Class"),
     )
     
-    iconpairs = schema.Tuple(
-        title = _("iconpairs", default=u"Iconpairs"),
-        required = False,
-        value_type= schema.TextLine(),
+    form.widget(text_pairs=DataGridFieldFactory)
+    iconpairs = schema.List(
+        title = _(u"icon text_pairs", 
+            default=u"Icon Text pairs"),
+        value_type= DictRow(schema=IPair),
+        required=False
     )
 
 class IconTile(Tile):

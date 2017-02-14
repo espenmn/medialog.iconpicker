@@ -32,6 +32,7 @@ setup(name='medialog.iconpicker',
           'collective.js.bootstrap',
           'medialog.controlpanel',
           'plone.api',
+           'collective.z3cform.datagridfield',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
