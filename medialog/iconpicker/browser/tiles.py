@@ -75,7 +75,62 @@ class IIconTile(model.Schema):
         description = _("help_css_class",
                       default="CSS Class"),
     )
+    
+    
+class IPair(model.Schema):
+    iconfield = schema.TextLine(
+        title = _("icon", default=u"Icon"),
+        required = False,
+        description = _("help_icon",
+                      default="Choose Icon"),
+    )
 
+    form.widget(
+            iconfield=IconPickerFieldWidget,
+    )
+
+    
+    title =schema.TextLine(
+        title = _("title", default=u"Title"),
+        required = False,
+        description = _("help_tittel",
+                      default="Title"),
+    )
+
+    text =schema.TextLine(
+        title = _("text", default=u"Text"),
+        required = False,
+        description = _("help_text",
+                      default="Text"),
+    )
+    
+    
+class IMultiIconTile(model.Schema):
+    
+    color = schema.TextLine(
+        title = _("color", default=u"Color"),
+        required = False,
+        description = _("help_color",
+                      default="Choose Color"),
+    )
+
+    form.widget(
+            color=ColorPickerFieldWidget,
+    )
+    
+    
+    css_class =schema.TextLine(
+        title = _("css class", default=u"CSS class"),
+        required = False,
+        description = _("help_css_class",
+                      default="CSS Class"),
+    )
+    
+    iconpairs = schema.Tuple(
+        title = _("iconpairs", default=u"Iconpairs"),
+        required = False,
+        value_type= schema(IPair),
+    )
 
 class IconTile(Tile):
     """A tile that displays icon and some text"""

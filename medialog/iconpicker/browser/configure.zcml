@@ -21,6 +21,20 @@
   
 
     <plone:tile
+        name="medialog.iconpicker.multitile"
+        title="Iconpicker Multi tile"
+        description="Displays several icons and text"
+        for="*"
+        schema=".tiles.IMultiIconTile"
+        class=".tiles.IconTile"
+        template="multiicontile.pt"
+        permission="zope2.View"
+        add_permission="cmf.ModifyPortalContent"
+        />
+
+     <!--/configure-->
+     
+    <plone:tile
         name="medialog.iconpicker.tile"
         title="Iconpicker tile"
         description="Displays icon and some text"
