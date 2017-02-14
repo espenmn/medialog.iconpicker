@@ -130,7 +130,7 @@ class IMultiIconTile(model.Schema):
                       default="CSS Class"),
     )
     
-    form.widget(text_pairs=DataGridFieldFactory)
+    form.widget(iconpairs=DataGridFieldFactory)
     iconpairs = schema.List(
         title = _(u"icon text_pairs", 
             default=u"Icon Text pairs"),
