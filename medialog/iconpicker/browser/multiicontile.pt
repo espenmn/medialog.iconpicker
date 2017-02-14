@@ -1,48 +1,9 @@
 <html>
 <body>
 <span class="${view/data/css_class}">
-    <span class="${view/family_css} iconfont ${view/data/iconfield}"
-         style="color: #${view/data/color}"> </span>
-	
-  <p tal:condition="view/data/title">${view/data/title}</p>
-  <p tal:condition="view/data/text">${view/data/text}</p>
+    
+    
+XXXX
 </span>
-
-
-    <style>
-        .iconpicker-popover {
-		z-index: 9999999 !important;
-	position: fixed !important;
-}
-
-.plone-modal-backdrop {
-	display: none;
-}
-
- 
-.iconpicker-popover.popover-content {
-	z-index: 99999999 !important;
-	display: block !important;
-	position: relative !important;
-}
-
-table.table-icons {
-	z-index: 9999999999;
-}
-
-div.popover.iconpicker-popover.top.in {
-	z-index: 9999999999 !important;
-	position: absolute !important;
-}
-
-
-.popover.iconpicker-popover {
-
-	z-index: 9999999 !important;
-} 
-        
-        
-        
-    </style>
 </body>
 </html>
