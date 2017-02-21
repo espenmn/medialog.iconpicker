@@ -2,14 +2,10 @@ Changelog
 =========
 
 
-0.6 (2017)
+0.5 (2017)
 ————————————————————	
 
 - added tile
-
-
-0.5 (2 nov 2016)
-————————————————————	
 
 - Added colorpicker, behaviour and template
 
