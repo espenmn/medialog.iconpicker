@@ -38,7 +38,7 @@ class IconPickerWidget(text.TextWidget):
         if iconset == 'elusiveicon':
             return 'el-icon'
         if iconset == 'medialogfont':
-            return 'medialogfont-icon'
+            return 'medialogfont'
         
         return 'fa'
         
