@@ -72,6 +72,11 @@ class IIconTile(model.Schema):
         description = _("help_text",
                       default="Text"),
     )
+     
+    link = schema.URI(title=u"Link",
+      required = False,
+    )
+    
     
     css_class =schema.TextLine(
         title = _("css class", default=u"CSS class"),
@@ -80,7 +85,69 @@ class IIconTile(model.Schema):
                       default="CSS Class"),
     )
     
-    
+
+
+class IconTile(Tile):
+    """A tile that displays icon and some text"""
+
+    def __init__(self, context, request):
+        super(IconTile, self).__init__(context, request)
+        
+    @property
+    def data(self):
+        data = super(IconTile, self).data
+        return data
+        
+    @property
+    def family_css(self):
+        #return css_family_class, like fa, wi
+        iconset = self.iconset()
+        if iconset == 'glyphicon':
+             return 'glyphicon'
+        if iconset == 'mapicon':
+            return 'map-icons'
+        if iconset == 'typicon':
+            return 'typcn'
+        if iconset == 'ionicon':
+            return 'ionicons'
+        if iconset == 'weathericon':
+            return 'wi'
+        if iconset == 'octicon' :
+            return 'octicon'
+        if iconset == 'elusiveicon':
+            return 'el-icon'
+        if iconset == 'medialogfont':
+            return 'medialogfont-icon'
+        
+        return 'fa'
+        
+    def iconset(self):
+        """Returns current iconset name This is also used for loading the resources below"""
+        return api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.iconset')
+        
+        
+        
+#class IconTileAddView(DefaultAddView):
+#    form = IconTileAddForm
+
+
+#class IconTileEditView(DefaultEditView):
+#    form = IconTileEditForm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class IPair(model.Schema):
     iconfield = schema.TextLine(
         title = _("icon", default=u"Icon"),
@@ -137,48 +204,3 @@ class IMultiIconTile(model.Schema):
         value_type= DictRow(schema=IPair),
         required=False
     )
-
-class IconTile(Tile):
-    """A tile that displays icon and some text"""
-
-    def __init__(self, context, request):
-        super(IconTile, self).__init__(context, request)
-        
-    @property
-    def data(self):
-        data = super(IconTile, self).data
-        return data
-        
-    @property
-    def family_css(self):
-        #return css_family_class, like fa, wi
-        iconset = self.iconset()
-        if iconset == 'glyphicon':
-             return 'glyphicon'
-        if iconset == 'mapicon':
-            return 'map-icons'
-        if iconset == 'typicon':
-            return 'typcn'
-        if iconset == 'ionicon':
-            return 'ionicons'
-        if iconset == 'weathericon':
-            return 'wi'
-        if iconset == 'octicon' :
-            return 'octicon'
-        if iconset == 'elusiveicon':
-            return 'el-icon'
-        
-        return 'fa'
-        
-    def iconset(self):
-        """Returns current iconset name This is also used for loading the resources below"""
-        return api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.iconset')
-        
-        
-        
-#class IconTileAddView(DefaultAddView):
-#    form = IconTileAddForm
-
-
-#class IconTileEditView(DefaultEditView):
-#    form = IconTileEditForm
