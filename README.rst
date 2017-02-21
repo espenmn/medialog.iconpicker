@@ -24,6 +24,10 @@ Colorpicker Behavior
 --------
 In the dexterity control panel: add 'colorpicker behavior'
 
+Iconpicker Tile
+--------
+In mosaic you can add Iconpicker tile
+
 
 Usage
 -----

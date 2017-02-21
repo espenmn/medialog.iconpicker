@@ -20,7 +20,7 @@
   <include package="plone.tiles" file="meta.zcml" />
   
 
-    <p!--lone:tile
+    <!-- plone:tile
         name="medialog.iconpicker.multitile"
         title="Iconpicker Multi tile"
         description="Displays several icons and text"
