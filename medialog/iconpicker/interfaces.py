@@ -48,7 +48,7 @@ class IIconPickerSettings(form.Schema):
         <a href="https://fortawesome.github.io/Font-Awesome/icons/">Font Awsome</a>  •  
         <a href="http://map-icons.com/">map-icons</a>
         """),
-        values=[('glyphicon'), ('ionicon'), ('fontawesome'), ('weathericon'), ('mapicon'), ('octicon'), ('typicon'), ('elusiveicon'),]
+        values=[('glyphicon'), ('ionicon'), ('fontawesome'), ('weathericon'), ('mapicon'), ('octicon'), ('typicon'), ('elusiveicon'), ('medialogfont'),]
     )
     
     loadbootstrap = schema.Bool(
