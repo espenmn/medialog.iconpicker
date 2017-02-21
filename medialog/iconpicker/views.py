@@ -25,6 +25,8 @@ class FontLoad(BrowserView):
             return 'octicon'
         if iconset == 'elusiveicon':
             return 'el-icon'
+        if iconset == 'medialogfont':
+            return 'medialogfont-icon'
         return 'fa'
         
 
@@ -35,6 +37,12 @@ class FontLoad(BrowserView):
     def glyphicon(self):
         return """
         <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-glyphicon.min.js"></script>
+        """
+
+
+    def medialogfont(self):
+        return """
+        <link rel="stylesheet" href="++resource++medialog.iconpicker/icon-fonts/medialogfont/medialogfont.css"/>
         """
 
     def fontawesome(self):
