@@ -42,7 +42,7 @@ class FontLoad(BrowserView):
 
     def medialogfont(self):
         return """
-        <link rel="stylesheet" href="++resource++medialog.iconpicker/icon-fonts/medialogfont/medialogfont.css"/>
+        <link rel="stylesheet" href="++resource++medialog.iconpicker/icon-fonts/medialogfont/font/medialogfont.css"/>
         """
 
     def fontawesome(self):
