@@ -72,6 +72,7 @@ class IconPickerWidget(text.TextWidget):
     def medialogfont(self):
         return """
         <link rel="stylesheet" href="++resource++medialog.iconpicker/icon-fonts/medialogfont/css/medialogfont.css"/>
+        <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-medialogfont.js"></script>
         """
         
     def glyphicon(self):
