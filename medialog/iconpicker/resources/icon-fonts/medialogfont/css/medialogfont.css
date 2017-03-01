@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'medialogfont';
-  src: url('../font/medialogfont.eot?10441980');
-  src: url('../font/medialogfont.eot?10441980#iefix') format('embedded-opentype'),
-       url('../font/medialogfont.woff2?10441980') format('woff2'),
-       url('../font/medialogfont.woff?10441980') format('woff'),
-       url('../font/medialogfont.ttf?10441980') format('truetype'),
-       url('../font/medialogfont.svg?10441980#medialogfont') format('svg');
+  src: url('../font/medialogfont.eot?57802628');
+  src: url('../font/medialogfont.eot?57802628#iefix') format('embedded-opentype'),
+       url('../font/medialogfont.woff2?57802628') format('woff2'),
+       url('../font/medialogfont.woff?57802628') format('woff'),
+       url('../font/medialogfont.ttf?57802628') format('truetype'),
+       url('../font/medialogfont.svg?57802628#medialogfont') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'medialogfont';
-    src: url('../font/medialogfont.svg?10441980#medialogfont') format('svg');
+    src: url('../font/medialogfont.svg?57802628#medialogfont') format('svg');
   }
 }
 */
@@ -55,4 +55,75 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-1486407141_miscellaneous-78:before { content: '\e800'; } /* '' */
+.icon-spade:before { content: '\e800'; } /* '' */
+.icon-friends:before { content: '\e801'; } /* '' */
+.icon-film:before { content: '\e802'; } /* '' */
+.icon-heart:before { content: '\e803'; } /* '' */
+.icon-intro:before { content: '\e804'; } /* '' */
+.icon-virtual-cycling:before { content: '\e805'; } /* '' */
+.icon-scenery:before { content: '\e806'; } /* '' */
+.icon-warm-up:before { content: '\e807'; } /* '' */
+.icon-hilly:before { content: '\e808'; } /* '' */
+.icon-climbing:before { content: '\e809'; } /* '' */
+.icon-team-challenge:before { content: '\e80a'; } /* '' */
+.icon-cinema-tour:before { content: '\e80b'; } /* '' */
+.icon-road-captain:before { content: '\e80c'; } /* '' */
+.icon-interval:before { content: '\e80d'; } /* '' */
+.icon-tempo:before { content: '\e80e'; } /* '' */
+.icon-pedal-strengt:before { content: '\e80f'; } /* '' */
+.icon-home:before { content: '\e810'; } /* '' */
+.icon-schedule:before { content: '\e811'; } /* '' */
+.icon-settings:before { content: '\e812'; } /* '' */
+.icon-sign-out:before { content: '\e813'; } /* '' */
+.icon-cinematic-cycling:before { content: '\e814'; } /* '' */
+.icon-music-workout:before { content: '\e815'; } /* '' */
+.icon-world-tour:before { content: '\e816'; } /* '' */
+.icon-fitnes-monitor:before { content: '\e817'; } /* '' */
+.icon-feedback:before { content: '\e818'; } /* '' */
+.icon-support:before { content: '\e819'; } /* '' */
+.icon-user-guide:before { content: '\e81a'; } /* '' */
+.icon-auto-mode:before { content: '\e81c'; } /* '' */
+.icon-spinning:before { content: '\e81d'; } /* '' */
+.icon-exit:before { content: '\e81e'; } /* '' */
+.icon-bar comparason:before { content: '\e81f'; } /* '' */
+.icon-pulse info:before { content: '\e820'; } /* '' */
+.icon-pulse curve:before { content: '\e821'; } /* '' */
+.icon-topography:before { content: '\e822'; } /* '' */
+.icon-hertz curve:before { content: '\e823'; } /* '' */
+.icon-pulse-target:before { content: '\e824'; } /* '' */
+.icon-workout:before { content: '\e825'; } /* '' */
+.icon-time:before { content: '\e826'; } /* '' */
+.icon-summary:before { content: '\e827'; } /* '' */
+.icon-spin-plan:before { content: '\e828'; } /* '' */
+.icon-segment-time:before { content: '\e829'; } /* '' */
+.icon-gradient up:before { content: '\e82a'; } /* '' */
+.icon-gradient-flat:before { content: '\e82b'; } /* '' */
+.icon-previous-part:before { content: '\e82c'; } /* '' */
+.icon-pause:before { content: '\e82d'; } /* '' */
+.icon-skip-part:before { content: '\e82e'; } /* '' */
+.icon-search:before { content: '\e82f'; } /* '' */
+.icon-position:before { content: '\e830'; } /* '' */
+.icon-tempo-1:before { content: '\e831'; } /* '' */
+.icon-globeracer-logo:before { content: '\e832'; } /* '' */
+.icon-arrow-down:before { content: '\e833'; } /* '' */
+.icon-arrow-down-neg:before { content: '\e834'; } /* '' */
+.icon-arrow-up-round:before { content: '\e835'; } /* '' */
+.icon-altitude:before { content: '\e836'; } /* '' */
+.icon-temp:before { content: '\e837'; } /* '' */
+.icon-play:before { content: '\e838'; } /* '' */
+.icon-heart-neg:before { content: '\e839'; } /* '' */
+.icon-kcal-monitor:before { content: '\e83a'; } /* '' */
+.icon-track-start:before { content: '\e83b'; } /* '' */
+.icon-track-end:before { content: '\e83c'; } /* '' */
+.icon-dots:before { content: '\e83d'; } /* '' */
+.icon-heartpulse:before { content: '\e83e'; } /* '' */
+.icon-gradient-down:before { content: '\e83f'; } /* '' */
+.icon-feed:before { content: '\e840'; } /* '' */
+.icon-flashlight:before { content: '\e841'; } /* '' */
+.icon-folder-open:before { content: '\e842'; } /* '' */
+.icon-folder-video:before { content: '\e843'; } /* '' */
+.icon-image:before { content: '\e844'; } /* '' */
+.icon-circle:before { content: '\e845'; } /* '' */
+.icon-kegel-1:before { content: '\e846'; } /* '' */
+.icon-kegel:before { content: '\e847'; } /* '' */
+.icon-8 ball:before { content: '\e848'; } /* '' */
