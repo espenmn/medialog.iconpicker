@@ -9,11 +9,24 @@ An iconpicker widget for Plone based on `Bootstrap-Iconpicker <https://victor-va
 
 Installation
 ============
-Add it in the add-ons control panel
+
+Install medialog.iconpicker by adding it to your buildout:
+
+.. code-block:: console
+
+    [buildout]
+
+    ...
+
+    eggs =
+        medialog.iconpicker
+
+
+run ``bin/buildout`` and add it in the add-ons control panel.
 
 Controlpanel
 ------------
-Important: You need to choose font in:
+**Important:** You need to choose a font in:
 http://yoursite/@@medialog_controlpanel
 
 
