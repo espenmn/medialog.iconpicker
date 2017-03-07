@@ -6,7 +6,7 @@
 
     $.iconset_medialogfont = {
         iconClass: '',
-        iconClassFix: '',
+        iconClassFix: 'icon-',
         icons: [
             'spade',
 			'friends',
