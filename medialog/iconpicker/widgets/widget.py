@@ -41,7 +41,6 @@ class IconPickerWidget(text.TextWidget):
             return 'medialogfont'
         if iconset == 'iconpickerfont':
             return 'iconpickerfont'
-        
         return 'fa'
         
     def plone5(self):
