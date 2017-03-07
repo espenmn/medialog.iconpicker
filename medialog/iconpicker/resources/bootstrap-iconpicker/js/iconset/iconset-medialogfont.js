@@ -98,7 +98,7 @@
 			'hardware', 
 			'toolbox-2', 
 			'workout-log', 
-			'special effects', 
+			'special-effects', 
 			'iocner-en-og-en_074', 
 			'class-metrics', 
 			'scenery-1', 
@@ -109,7 +109,6 @@
 			'real-time-data',
 			'wi-fi',
 			'console',
-			'heart rate',
-			'smartphone',
-        ]};
+			'heart-rate',
+			'smartphone']};
 })(jQuery);
