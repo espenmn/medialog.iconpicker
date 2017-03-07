@@ -48,6 +48,7 @@
         typicon: $.iconset_typicon || Iconpicker.ICONSET_EMPTY,
         weathericon: $.iconset_weathericon || Iconpicker.ICONSET_EMPTY
         medialogfont: $.iconset_medialogfont || Iconpicker.ICONSET_EMPTY
+        iconpickerfont: $.iconset_iconpickerfont || Iconpicker.ICONSET_EMPTY
     };
 
     // ICONPICKER DEFAULTS

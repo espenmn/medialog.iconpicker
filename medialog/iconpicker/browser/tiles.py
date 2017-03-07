@@ -118,6 +118,8 @@ class IconTile(Tile):
             return 'el-icon'
         if iconset == 'medialogfont':
             return 'medialogfont'
+        if iconset == 'iconpickerfont':
+            return 'iconpickerfont'
         
         return 'fa'
         
