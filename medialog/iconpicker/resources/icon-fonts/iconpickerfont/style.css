@@ -54,41 +54,29 @@
 .icon-Video:before {
   content: "\e92b";
 }
-.icon-online_social_media_vimeo .path1:before {
+.icon-online_social_media_vimeo  {
   content: "\e92c";
-  color: rgb(51, 51, 51);
 }
 .icon-online_social_media_vimeo .path2:before {
   content: "\e92d";
-  margin-left: -1em;
-  color: rgb(255, 255, 255);
 }
 .icon-online_social_media_facebook .path1:before {
   content: "\e92e";
-  color: rgb(51, 51, 51);
 }
 .icon-online_social_media_facebook .path2:before {
   content: "\e937";
-  margin-left: -1em;
-  color: rgb(255, 255, 255);
 }
 .icon-linked_in_online_social_media .path1:before {
   content: "\e938";
-  color: rgb(51, 51, 51);
 }
 .icon-linked_in_online_social_media .path2:before {
   content: "\e93b";
-  margin-left: -1em;
-  color: rgb(255, 255, 255);
 }
 .icon-instagram_online_social_media_photo .path1:before {
   content: "\e93c";
-  color: rgb(51, 51, 51);
 }
 .icon-instagram_online_social_media_photo .path2:before {
   content: "\e93d";
-  margin-left: -1em;
-  color: rgb(255, 255, 255);
 }
 .icon-smartphone:before {
   content: "\e93e";
@@ -113,36 +101,21 @@
 }
 .icon-Senses .path1:before {
   content: "\e95a";
-  color: rgb(0, 0, 0);
 }
 .icon-Senses .path2:before {
   content: "\e95b";
-  margin-left: -1.287109375em;
-  color: rgb(0, 0, 0);
 }
 .icon-Senses .path3:before {
   content: "\e95c";
-  margin-left: -1.287109375em;
-  color: rgb(0, 0, 0);
-  opacity: 0.9;
 }
 .icon-Senses .path4:before {
   content: "\e95d";
-  margin-left: -1.287109375em;
-  color: rgb(0, 0, 0);
-  opacity: 0.9;
 }
 .icon-Senses .path5:before {
   content: "\e95e";
-  margin-left: -1.287109375em;
-  color: rgb(0, 0, 0);
-  opacity: 0.9;
 }
 .icon-Senses .path6:before {
   content: "\e95f";
-  margin-left: -1.287109375em;
-  color: rgb(0, 0, 0);
-  opacity: 0.9;
 }
 .icon-Real_time_data:before {
   content: "\e960";
@@ -153,14 +126,11 @@
 .icon-Films:before {
   content: "\e96d";
 }
-.icon-Class_metrics .path1:before {
+.icon-Class_metrics:before {
   content: "\e96e";
-  color: rgb(0, 0, 0);
 }
-.icon-Class_metrics .path2:before {
+.icon-Class_metrics:before {
   content: "\e96f";
-  margin-left: -1.357421875em;
-  color: rgb(255, 255, 255);
 }
 .icon-home:before {
   content: "\e900";
