@@ -50,7 +50,7 @@ class FontLoad(BrowserView):
         
     def iconpickerfont(self):
         return """
-        <link rel="stylesheet" href="++resource++medialog.iconpicker/icon-fonts/iconpickerfont/css/style.css"/>
+        <link rel="stylesheet" href="++resource++medialog.iconpicker/icon-fonts/iconpickerfont/style.css"/>
         <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-iconpickerfont.js"></script>
         """
 
