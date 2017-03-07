@@ -41,8 +41,11 @@ class IconPickerWidget(text.TextWidget):
             return 'medialogfont'
         if iconset == 'iconpickerfont':
             return 'iconpickerfont'
-        return 'fa'
         
+        return 'fa'
+
+
+
     def plone5(self):
         try:
             from Products.CMFPlone.factory import _IMREALLYPLONE5
