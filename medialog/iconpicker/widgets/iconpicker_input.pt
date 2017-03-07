@@ -37,7 +37,7 @@
 <!-- Bootstrap-Iconpicker JS and CSS -->
 <link rel="stylesheet" href="++resource++medialog.iconpicker/bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"/>
 <link rel="stylesheet" href="++resource++medialog.iconpicker/bootstrap-3.2.0/css/bootstrap.min.css"/>
-<script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/bootstrap-iconpicker.js"></script>
+<script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"></script>
  
  
 <!-- Bootstrap JS, loaded on condition, works with Plone 5-->

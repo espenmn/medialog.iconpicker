@@ -57,22 +57,22 @@
 .icon-online_social_media_vimeo  {
   content: "\e92c";
 }
-.icon-online_social_media_vimeo .path2:before {
+.icon-online_social_media_vimeo:before {
   content: "\e92d";
 }
-.icon-online_social_media_facebook .path1:before {
+.icon-online_social_media_facebook:before {
   content: "\e92e";
 }
-.icon-online_social_media_facebook .path2:before {
+.icon-online_social_media_facebook2:before {
   content: "\e937";
 }
-.icon-linked_in_online_social_media .path1:before {
+.icon-linked_in_online_social_media:before {
   content: "\e938";
 }
 .icon-linked_in_online_social_media .path2:before {
   content: "\e93b";
 }
-.icon-instagram_online_social_media_photo .path1:before {
+.icon-instagram_online_social_media_photo:before {
   content: "\e93c";
 }
 .icon-instagram_online_social_media_photo .path2:before {
