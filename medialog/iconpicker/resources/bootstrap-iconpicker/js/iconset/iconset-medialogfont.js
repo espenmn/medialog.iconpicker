@@ -8,7 +8,7 @@
         iconClass: '',
         iconClassFix: 'icon-',
         icons: [
-            ''3rd_party_hardware_2',
+            '3rd_party_hardware_2',
 'toolbox_2',
 'facebook',
 'instagram',
