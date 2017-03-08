@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'medialogfont';
-  src: url('../font/medialogfont.eot?78224854');
-  src: url('../font/medialogfont.eot?78224854#iefix') format('embedded-opentype'),
-       url('../font/medialogfont.woff2?78224854') format('woff2'),
-       url('../font/medialogfont.woff?78224854') format('woff'),
-       url('../font/medialogfont.ttf?78224854') format('truetype'),
-       url('../font/medialogfont.svg?78224854#medialogfont') format('svg');
+  src: url('../font/medialogfont.eot?23885202');
+  src: url('../font/medialogfont.eot?23885202#iefix') format('embedded-opentype'),
+       url('../font/medialogfont.woff2?23885202') format('woff2'),
+       url('../font/medialogfont.woff?23885202') format('woff'),
+       url('../font/medialogfont.ttf?23885202') format('truetype'),
+       url('../font/medialogfont.svg?23885202#medialogfont') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'medialogfont';
-    src: url('../font/medialogfont.svg?78224854#medialogfont') format('svg');
+    src: url('../font/medialogfont.svg?23885202#medialogfont') format('svg');
   }
 }
 */
@@ -55,8 +55,16 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-spade:before { content: '\e800'; } /* '' */
-.icon-friends:before { content: '\e801'; } /* '' */
+.icon-3rd_party_hardware_2:before { content: '\e800'; } /* '' */
+.icon-toolbox_2:before { content: '\e801'; } /* '' */
+.icon-facebook:before { content: '\e802'; } /* '' */
+.icon-instagram:before { content: '\e803'; } /* '' */
+.icon-linked:before { content: '\e804'; } /* '' */
+.icon-vimeo:before { content: '\e805'; } /* '' */
+.icon-play-circled2:before { content: '\e806'; } /* '' */
+.icon-play-circled2-1:before { content: '\e807'; } /* '' */
+.icon-right-circle:before { content: '\e808'; } /* '' */
+.icon-eye:before { content: '\e81b'; } /* '' */
 .icon-pulse-target:before { content: '\e824'; } /* '' */
 .icon-workout:before { content: '\e825'; } /* '' */
 .icon-summary:before { content: '\e827'; } /* '' */
@@ -72,11 +80,6 @@
 .icon-tempo-1:before { content: '\e831'; } /* '' */
 .icon-altitude:before { content: '\e836'; } /* '' */
 .icon-temp:before { content: '\e837'; } /* '' */
-.icon-track-start:before { content: '\e83b'; } /* '' */
-.icon-track-end:before { content: '\e83c'; } /* '' */
-.icon-dots:before { content: '\e83d'; } /* '' */
-.icon-heartpulse:before { content: '\e83e'; } /* '' */
-.icon-gradient-down:before { content: '\e83f'; } /* '' */
 .icon-feed3:before { content: '\e840'; } /* '' */
 .icon-flashlight:before { content: '\e841'; } /* '' */
 .icon-folder-open3:before { content: '\e842'; } /* '' */
@@ -87,16 +90,26 @@
 .icon-kegel:before { content: '\e847'; } /* '' */
 .icon-8ball:before { content: '\e848'; } /* '' */
 .icon-arrow_right:before { content: '\e849'; } /* '' */
+.icon-admin:before { content: '\e86b'; } /* '' */
+.icon-centre_owners:before { content: '\e86c'; } /* '' */
+.icon-cinematic_cycling:before { content: '\e86d'; } /* '' */
+.icon-class_metrics:before { content: '\e86e'; } /* '' */
+.icon-films:before { content: '\e86f'; } /* '' */
+.icon-instructor_feature:before { content: '\e870'; } /* '' */
+.icon-instructors:before { content: '\e871'; } /* '' */
+.icon-members:before { content: '\e872'; } /* '' */
+.icon-play_movie:before { content: '\e873'; } /* '' */
+.icon-quality_films:before { content: '\e874'; } /* '' */
+.icon-real_time_data:before { content: '\e875'; } /* '' */
+.icon-senses:before { content: '\e876'; } /* '' */
+.icon-special_effects:before { content: '\e877'; } /* '' */
+.icon-toolbox:before { content: '\e878'; } /* '' */
+.icon-wifi:before { content: '\e879'; } /* '' */
 .icon-home:before { content: '\e900'; } /* '' */
 .icon-home2:before { content: '\e901'; } /* '' */
 .icon-home4:before { content: '\e902'; } /* '' */
 .icon-home22:before { content: '\e903'; } /* '' */
 .icon-home3:before { content: '\e904'; } /* '' */
-.icon-home5:before { content: '\e905'; } /* '' */
-.icon-home23:before { content: '\e906'; } /* '' */
-.icon-home32:before { content: '\e907'; } /* '' */
-.icon-home24:before { content: '\e908'; } /* '' */
-.icon-home6:before { content: '\e909'; } /* '' */
 .icon-Heart_rate_belt:before { content: '\e90a'; } /* '' */
 .icon-droplet:before { content: '\e90b'; } /* '' */
 .icon-droplet2:before { content: '\e90c'; } /* '' */
@@ -260,7 +273,7 @@
 .icon-earth:before { content: '\e9cb'; } /* '' */
 .icon-flag:before { content: '\e9cc'; } /* '' */
 .icon-earth2:before { content: '\e9cd'; } /* '' */
-.icon-eye:before { content: '\e9ce'; } /* '' */
+.icon-eye-1:before { content: '\e9ce'; } /* '' */
 .icon-eye-plus:before { content: '\e9cf'; } /* '' */
 .icon-eye-minus2:before { content: '\e9d0'; } /* '' */
 .icon-eye-blocked2:before { content: '\e9d1'; } /* '' */
