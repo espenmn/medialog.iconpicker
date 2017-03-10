@@ -3937,6 +3937,42 @@
       "src": "websymbols"
     },
     {
+      "uid": "8e04c98c8f5ca0a035776e3001ad2638",
+      "css": "facebook-1",
+      "code": 61594,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e9107949dd6c9e8ab2b29ae07156e38c",
+      "css": "linkedin",
+      "code": 61665,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e331ff486a299c6bdf0056426c8fac53",
+      "css": "youtube-squared",
+      "code": 61798,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "6b44ce2430177c5b05a1d1575ccaaf5c",
+      "css": "vimeo-1",
+      "code": 62077,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "52ee4b2769437c85066253217b23c265",
+      "css": "houzz",
+      "code": 62076,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4c1ef492f1d2c39a2250ae457cee2a6e",
+      "css": "instagram-1",
+      "code": 61805,
+      "src": "fontawesome"
+    },
+    {
       "uid": "d56ce04c2f0acf455a101cc9633f3912",
       "css": "movie-info",
       "code": 59392,

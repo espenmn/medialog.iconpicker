@@ -289,5 +289,12 @@
 'circle-left2',
 'radio-checked',
 'radio-checked2',
-'stackoverflow']};
+'stackoverflow',
+'stackoverflow2',
+'facebook-1',
+'linkedin',
+'youtube',
+'instagram-1',
+'houzz',
+'icon-vimeo']};
 })(jQuery);
