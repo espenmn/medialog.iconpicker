@@ -1,5 +1,5 @@
 
-.icon-play-thin:before { content: '\e800'; } /* '' */
+.icon-play-circled2-2:before { content: '\e800'; } /* '' */
 .icon-toolbox_2:before { content: '\e801'; } /* '' */
 .icon-facebook:before { content: '\e802'; } /* '' */
 .icon-instagram:before { content: '\e803'; } /* '' */
@@ -8,11 +8,20 @@
 .icon-play-circled2:before { content: '\e806'; } /* '' */
 .icon-play-circled2-1:before { content: '\e807'; } /* '' */
 .icon-right-circle:before { content: '\e808'; } /* '' */
-.icon-people:before { content: '\e809'; } /* '' */
-.icon-service:before { content: '\e80a'; } /* '' */
-.icon-headphones:before { content: '\e80b'; } /* '' */
-.icon-3rd_party_hardware_2:before { content: '\e80c'; } /* '' */
-.icon-video-thin-new:before { content: '\e80d'; } /* '' */
+.icon-play-circled2-3:before { content: '\e809'; } /* '' */
+.icon-right-circle-1:before { content: '\e80a'; } /* '' */
+.icon-people:before { content: '\e80b'; } /* '' */
+.icon-service:before { content: '\e80c'; } /* '' */
+.icon-headphones:before { content: '\e80d'; } /* '' */
+.icon-3rd_party_hardware_2:before { content: '\e80e'; } /* '' */
+.icon-video-thin-new:before { content: '\e80f'; } /* '' */
+.icon-eye-1:before { content: '\e810'; } /* '' */
+.icon-facebook-2:before { content: '\e811'; } /* '' */
+.icon-linkedin-1:before { content: '\e812'; } /* '' */
+.icon-youtube-squared-1:before { content: '\e813'; } /* '' */
+.icon-instagram-2:before { content: '\e814'; } /* '' */
+.icon-houzz-1:before { content: '\e815'; } /* '' */
+.icon-vimeo-2:before { content: '\e816'; } /* '' */
 .icon-eye:before { content: '\e81b'; } /* '' */
 .icon-pulse-target:before { content: '\e824'; } /* '' */
 .icon-workout:before { content: '\e825'; } /* '' */
@@ -220,7 +229,7 @@
 .icon-earth:before { content: '\e9cb'; } /* '' */
 .icon-flag:before { content: '\e9cc'; } /* '' */
 .icon-earth2:before { content: '\e9cd'; } /* '' */
-.icon-eye-1:before { content: '\e9ce'; } /* '' */
+.icon-eye-2:before { content: '\e9ce'; } /* '' */
 .icon-eye-plus:before { content: '\e9cf'; } /* '' */
 .icon-eye-minus2:before { content: '\e9d0'; } /* '' */
 .icon-eye-blocked2:before { content: '\e9d1'; } /* '' */
