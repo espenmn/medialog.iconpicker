@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'medialogfont';
-  src: url('../font/medialogfont.eot?86139910');
-  src: url('../font/medialogfont.eot?86139910#iefix') format('embedded-opentype'),
-       url('../font/medialogfont.woff2?86139910') format('woff2'),
-       url('../font/medialogfont.woff?86139910') format('woff'),
-       url('../font/medialogfont.ttf?86139910') format('truetype'),
-       url('../font/medialogfont.svg?86139910#medialogfont') format('svg');
+  src: url('../font/medialogfont.eot?82152847');
+  src: url('../font/medialogfont.eot?82152847#iefix') format('embedded-opentype'),
+       url('../font/medialogfont.woff2?82152847') format('woff2'),
+       url('../font/medialogfont.woff?82152847') format('woff'),
+       url('../font/medialogfont.ttf?82152847') format('truetype'),
+       url('../font/medialogfont.svg?82152847#medialogfont') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'medialogfont';
-    src: url('../font/medialogfont.svg?86139910#medialogfont') format('svg');
+    src: url('../font/medialogfont.svg?82152847#medialogfont') format('svg');
   }
 }
 */
@@ -68,6 +68,7 @@
 .icon-service:before { content: '\e80a'; } /* '' */
 .icon-headphones:before { content: '\e80b'; } /* '' */
 .icon-3rd_party_hardware_2:before { content: '\e80c'; } /* '' */
+.icon-video-thin-new:before { content: '\e80d'; } /* '' */
 .icon-eye:before { content: '\e81b'; } /* '' */
 .icon-pulse-target:before { content: '\e824'; } /* '' */
 .icon-workout:before { content: '\e825'; } /* '' */

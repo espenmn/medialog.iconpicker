@@ -291,6 +291,7 @@
 'video-camera2',
 'video',
 'Video',
+'video-thin-new',
 'vimeo',
 'volume-high',
 'volume-high2',
