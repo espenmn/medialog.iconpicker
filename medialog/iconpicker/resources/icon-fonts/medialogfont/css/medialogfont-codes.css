@@ -1,5 +1,5 @@
 
-.icon-3rd_party_hardware_2:before { content: '\e800'; } /* '' */
+.icon-play-thin:before { content: '\e800'; } /* '' */
 .icon-toolbox_2:before { content: '\e801'; } /* '' */
 .icon-facebook:before { content: '\e802'; } /* '' */
 .icon-instagram:before { content: '\e803'; } /* '' */
@@ -8,6 +8,9 @@
 .icon-play-circled2:before { content: '\e806'; } /* '' */
 .icon-play-circled2-1:before { content: '\e807'; } /* '' */
 .icon-right-circle:before { content: '\e808'; } /* '' */
+.icon-people:before { content: '\e809'; } /* '' */
+.icon-service:before { content: '\e80a'; } /* '' */
+.icon-headphones:before { content: '\e80b'; } /* '' */
 .icon-eye:before { content: '\e81b'; } /* '' */
 .icon-pulse-target:before { content: '\e824'; } /* '' */
 .icon-workout:before { content: '\e825'; } /* '' */
@@ -39,14 +42,12 @@
 .icon-cinematic_cycling:before { content: '\e86d'; } /* '' */
 .icon-class_metrics:before { content: '\e86e'; } /* '' */
 .icon-films:before { content: '\e86f'; } /* '' */
-.icon-instructor_feature:before { content: '\e870'; } /* '' */
 .icon-instructors:before { content: '\e871'; } /* '' */
 .icon-members:before { content: '\e872'; } /* '' */
 .icon-play_movie:before { content: '\e873'; } /* '' */
 .icon-quality_films:before { content: '\e874'; } /* '' */
 .icon-real_time_data:before { content: '\e875'; } /* '' */
 .icon-senses:before { content: '\e876'; } /* '' */
-.icon-special_effects:before { content: '\e877'; } /* '' */
 .icon-toolbox:before { content: '\e878'; } /* '' */
 .icon-wifi:before { content: '\e879'; } /* '' */
 .icon-home:before { content: '\e900'; } /* '' */
