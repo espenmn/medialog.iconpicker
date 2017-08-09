@@ -2,11 +2,17 @@ Changelog
 =========
 
 
+0.6 (2017)
+————————————————————	
+
+- added custom font
+- added lineage registry
+
+
 0.5 (2017)
 ————————————————————	
 
 - added tile
-
 - Added colorpicker, behaviour and template
 
 

@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.5'
+version = '0.6'
 
 setup(name='medialog.iconpicker',
       version=version,
@@ -33,6 +33,7 @@ setup(name='medialog.iconpicker',
           'medialog.controlpanel',
           'plone.api',
            'collective.z3cform.datagridfield',
+           'lineage.registry',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
