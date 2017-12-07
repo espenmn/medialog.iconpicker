@@ -15,6 +15,7 @@ class IIconPickerWidget(interfaces.IWidget):
     """Iconpicker widget."""
  
 
+@zope.interface.implementer_only(IIconPickerWidget)
 class IconPickerWidget(text.TextWidget):
     """Iconpicker Widget"""
 
