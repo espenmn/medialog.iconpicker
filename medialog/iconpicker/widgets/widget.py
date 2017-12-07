@@ -139,7 +139,7 @@ class IconPickerWidget(text.TextWidget):
             return '#' + color
         return "inherit"
 
-        
+@zope.interface.implementer(interfaces.IFieldWidget) 
 def IconPickerFieldWidget(field, request):
     """IFieldWidget factory for IconPickerWidget."""
     return widget.FieldWidget(field, IconPickerWidget(request))
