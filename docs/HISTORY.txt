@@ -5,6 +5,7 @@ Changelog
 ————————————————————	
 
 - fix css class 
+- FieldWidget can now be used with Mosaic
 
 
 0.6 (2017)
