@@ -3,10 +3,10 @@
 
 .iconpicker-popover {
 	z-index: 9999 !important;
-	-moz-filter: blur(1px); */
-	-o-filter: blur(1px); */
-	-ms-filter: blur(1px); */
-	filter: blur(1px); */
+	-moz-filter: blur(0);
+	-o-filter: blur(0); 
+	-ms-filter: blur(0);
+	filter: blur(0);
 	position: fixed !important;
 }
 
