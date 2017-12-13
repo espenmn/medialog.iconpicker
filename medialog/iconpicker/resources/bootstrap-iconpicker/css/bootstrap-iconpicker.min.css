@@ -1,4 +1,4 @@
-/*! * Mosaic hack */.iconpicker-popover.popover-content{z-index:9999!important;-moz-filter: blur(0);-o-filter: blur(0);-ms-filter:blur(0);filter:blur(0);position: fixed !important;}.popover.iconpicker-popover{z-index:99999!important}/*!
+/*! * Mosaic hack */.iconpicker-popover,.iconpicker-popover.popover-content,.popover.iconpicker-popover {z-index:9999!important;-moz-filter: blur(0);-o-filter: blur(0);-ms-filter:blur(0);filter:blur(0);position: fixed !important;}/*!
  * Bootstrap-iconpicker v1.5.0
  *
  * Copyright 2013-2014 Victor Valencia Rico.
