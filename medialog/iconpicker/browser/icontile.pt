@@ -3,15 +3,19 @@
 <span class="${view/data/css_class}">
     <span tal:condition="view/data/iconfield" class="${view/family_css} iconfont ${view/data/iconfield}"
          style="color: #${view/data/color}"> </span>
-	
+
   <p tal:condition="view/data/title">${view/data/title}</p>
   <p tal:condition="view/data/text">${view/data/text}</p>
 </span>
 
 
     <style>
-        .iconpicker-popover {
-		z-index: 9999999 !important;
+iconpicker-popover {
+		z-index: 9999 !important;
+    -moz-filter: blur(0); */
+    -o-filter: blur(0); */
+    -ms-filter: blur(0); */
+    filter: blur(0); */
 	position: fixed !important;
 }
 
@@ -19,7 +23,7 @@
 	display: none;
 }
 
- 
+
 .iconpicker-popover.popover-content {
 	z-index: 99999999 !important;
 	display: block !important;
@@ -39,10 +43,10 @@ div.popover.iconpicker-popover.top.in {
 .popover.iconpicker-popover {
 
 	z-index: 9999999 !important;
-} 
-        
-        
-        
+}
+
+
+
     </style>
 </body>
 </html>
