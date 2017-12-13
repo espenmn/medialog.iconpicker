@@ -8,11 +8,9 @@
                        accesskey view/accesskey;
                        onselect view/onselect;
                        size view/size;
-                       maxlength view/maxlength" 
+                       maxlength view/maxlength"
                        class="jscolor" />
- 
+
 
 <!-- js and  resources -->
 <script type="text/javascript" src="++resource++medialog.iconpicker/jscolor.js"></script>
-
-  
