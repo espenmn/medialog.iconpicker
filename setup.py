@@ -5,7 +5,7 @@ version = '0.6.3.2'
 
 setup(name='medialog.iconpicker',
       version=version,
-      description="iconpicker for Plone",
+      description="Iconpicker for Plone",
       long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
