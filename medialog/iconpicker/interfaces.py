@@ -38,30 +38,30 @@ class IIconPickerSettings(form.Schema):
 
     iconset = schema.Choice(
         title=_(u"label_iconset", default=u"Iconset"),
-        description=_(u"help_iconset", 
-        default=u"""Choose iconset to be used for iconpicker.Some links: 
-        <a href="https://erikflowers.github.io/weather-icons/">Weather-icons</a> • 
-        <a href="http://www.typicons.com">Typicons</a> • 
-        <a href="https://octicons.github.com/">Octicons</a> •  
-        <a href="http://ionicons.com/">Ionicons</a>  • 
-        <a href="">http://elusiveicons.com/cheatsheet/</a>  • 
-        <a href="https://fortawesome.github.io/Font-Awesome/icons/">Font Awsome</a>  •  
+        description=_(u"help_iconset",
+        default=u"""Choose iconset to be used for iconpicker.Some links:
+        <a href="https://erikflowers.github.io/weather-icons/">Weather-icons</a> •
+        <a href="http://www.typicons.com">Typicons</a> •
+        <a href="https://octicons.github.com/">Octicons</a> •
+        <a href="http://ionicons.com/">Ionicons</a>  •
+        <a href="">http://elusiveicons.com/cheatsheet/</a>  •
+        <a href="https://fortawesome.github.io/Font-Awesome/icons/">Font Awsome</a>  •
         <a href="http://map-icons.com/">map-icons</a>
         """),
-        values=[('glyphicon'), ('ionicon'), ('fontawesome'), ('weathericon'), ('mapicon'), ('octicon'), ('typicon'), ('elusiveicon'), ('medialogfont'), ('iconpickerfont'),]
+        values=[('glyphicon'), ('ionicon'), ('fontawesome'), ('weathericon'), ('mapicon'), ('octicon'), ('typicon'), ('elusiveicon'), ('medialogfont'), ('iconpickerfont'), ('lineawesome'),]
     )
-    
+
     loadbootstrap = schema.Bool(
      	title=_(u"label_loadbootstrap", default=u"Load Bootstrap"),
-        description=_(u"help_loadbootstrap", 
+        description=_(u"help_loadbootstrap",
             default=u"""Loads ++resource++collective.js.bootstrap/js/bootstrap.min.js. <br/>
             You probably want to do this in your diazo theme instead.""")
     )
-        
+
     cols = schema.Int (
     	title=_(u"label_columns", default=u"Columns"),
     )
-    
+
     rows = schema.Int (
     	title=_(u"label_rows", default=u"Rows"),
     )
@@ -71,5 +71,5 @@ class IIconPickerSettings(form.Schema):
         values=[('left'), ('top'), ('bottom'), ('right'),]
     )
 
-        
+
 alsoProvides(IIconPickerSettings, IMedialogControlpanelSettingsProvider)

@@ -23,13 +23,13 @@ from zope.schema import getFields
 from plone.tiles.interfaces import ITileType
 
 
-from collective.z3cform.datagridfield import DataGridFieldFactory 
+from collective.z3cform.datagridfield import DataGridFieldFactory
 from collective.z3cform.datagridfield import DictRow
 
 
 _ = MessageFactory('medialog.iconpicker')
 
- 
+
 from medialog.iconpicker.widgets.widget import IconPickerFieldWidget
 from medialog.iconpicker.widgets.widget import ColorPickerFieldWidget
 from medialog.iconpicker.interfaces import IIconPickerSettings
@@ -47,7 +47,7 @@ class IIconTile(model.Schema):
             iconfield=IconPickerFieldWidget,
     )
 
-    
+
     color = schema.TextLine(
         title = _("color", default=u"Color"),
         required = False,
@@ -58,7 +58,7 @@ class IIconTile(model.Schema):
     form.widget(
             color=ColorPickerFieldWidget,
     )
-    
+
     title =schema.TextLine(
         title = _("title", default=u"Title"),
         required = False,
@@ -72,19 +72,19 @@ class IIconTile(model.Schema):
         description = _("help_text",
                       default="Text"),
     )
-     
+
     link = schema.URI(title=u"Link",
       required = False,
     )
-    
-    
+
+
     css_class =schema.TextLine(
         title = _("css class", default=u"CSS class"),
         required = False,
         description = _("help_css_class",
                       default="CSS Class"),
     )
-    
+
 
 
 class IconTile(Tile):
@@ -92,12 +92,12 @@ class IconTile(Tile):
 
     def __init__(self, context, request):
         super(IconTile, self).__init__(context, request)
-        
+
     @property
     def data(self):
         data = super(IconTile, self).data
         return data
-        
+
     @property
     def family_css(self):
         #return css_family_class, like fa, wi
@@ -120,32 +120,22 @@ class IconTile(Tile):
             return 'medialogfont'
         if iconset == 'iconpickerfont':
             return 'iconpickerfont'
-        
+        if iconset == 'lineawsome':
+            return 'linewsome'
         return 'fa'
-        
+
     def iconset(self):
         """Returns current iconset name This is also used for loading the resources below"""
         return api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.iconset')
-        
-        
-        
+
+
+
 #class IconTileAddView(DefaultAddView):
 #    form = IconTileAddForm
 
 
 #class IconTileEditView(DefaultEditView):
 #    form = IconTileEditForm
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -162,7 +152,7 @@ class IPair(model.Schema):
             iconfield=IconPickerFieldWidget,
     )
 
-    
+
     title =schema.TextLine(
         title = _("title", default=u"Title"),
         required = False,
@@ -176,10 +166,10 @@ class IPair(model.Schema):
         description = _("help_text",
                       default="Text"),
     )
-    
-    
+
+
 class IMultiIconTile(model.Schema):
-    
+
     color = schema.TextLine(
         title = _("color", default=u"Color"),
         required = False,
@@ -190,18 +180,18 @@ class IMultiIconTile(model.Schema):
     form.widget(
             color=ColorPickerFieldWidget,
     )
-    
-    
+
+
     css_class =schema.TextLine(
         title = _("css class", default=u"CSS class"),
         required = False,
         description = _("help_css_class",
                       default="CSS Class"),
     )
-    
+
     form.widget(iconpairs=DataGridFieldFactory)
     iconpairs = schema.List(
-        title = _(u"icon text_pairs", 
+        title = _(u"icon text_pairs",
             default=u"Icon Text pairs"),
         value_type= DictRow(schema=IPair),
         required=False

@@ -1,8 +1,8 @@
 <html>
-<body>
+
 <span class="ontop">
-<button                class="btn btn-default" 
- 					   role="iconpicker"  
+<button                class="btn btn-default"
+ 					   role="iconpicker"
 					   tal:attributes="id string:${view/id};
                        name view/name;
                        data-iconset   view/iconset;
@@ -15,7 +15,7 @@
                        alt view/alt;
                        accesskey view/accesskey;
                        onselect view/onselect;"  />
-              
+
 
 <input  type="hidden"  disabled="True"
  					   tal:attributes="id string:${view/id};
@@ -27,19 +27,21 @@
                        onselect view/onselect;
                        size view/size;
                        maxlength view/maxlength" />
- 
 
 
+
+                       <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-line-awesome.js"></script>
+                       <link rel="stylesheet" href="++resource++medialog.iconpicker/icon-fonts/line-awesome/css/line-awesome.css"/>
 
 <!-- font specific resources -->
 <tal:resources tal:define="iconset view/iconset" tal:replace="structure view/?iconset"/>
- 
+
 <!-- Bootstrap-Iconpicker JS and CSS -->
 <link rel="stylesheet" href="++resource++medialog.iconpicker/bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"/>
 <link rel="stylesheet" href="++resource++medialog.iconpicker/bootstrap-3.2.0/css/bootstrap.min.css"/>
 <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"></script>
- 
- 
+
+
 <!-- Bootstrap JS, loaded on condition, works with Plone 5-->
 <!-- With Plone 4, eveything is pinned to earlier bootstrap-->
 <tal:plone4 tal:condition="not:view/plone5">
@@ -55,5 +57,5 @@
 </tal:plone5>
 </span>
 
-</body>
+
 </html>
