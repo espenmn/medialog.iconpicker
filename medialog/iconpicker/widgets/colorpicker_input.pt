@@ -1,5 +1,6 @@
 <!-- js and  resources -->
-<script type="text/javascript" src="++resource++medialog.iconpicker/jscolor.js"></script>
+
+<span class="ontop">
 <input  			   tal:attributes="id string:${view/id};
                        name view/name;
                        value view/value;
@@ -9,9 +10,8 @@
                        accesskey view/accesskey;
                        onselect view/onselect;
                        size view/size;
-                       maxlength view/maxlength" />
+                       maxlength view/maxlength"
+                       class="jscolor ontop" />
 
-<button class="jscolor
-    {valueElement:'${view/id}'}">
-    Pick a color
-</button>
+<script type="text/javascript" src="++resource++medialog.iconpicker/jscolor.js"></script>
+</span>
