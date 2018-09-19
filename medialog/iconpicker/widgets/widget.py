@@ -166,6 +166,7 @@ class ColorPickerWidget(text.TextWidget):
     zope.interface.implementsOnly(IColorPickerWidget)
 
 
+@zope.interface.implementer(interfaces.IFieldWidget) 
 def ColorPickerFieldWidget(field, request):
     """IFieldWidget factory for ColorPickerWidget."""
     return widget.FieldWidget(field, ColorPickerWidget(request))
