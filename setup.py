@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.6.4'
+version = '0.7'
 
 setup(name='medialog.iconpicker',
       version=version,
@@ -25,10 +25,8 @@ setup(name='medialog.iconpicker',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
-          'setuptools',
           'plone.app.dexterity',
           'plone.behavior',
-          'plone.directives.form',
           'collective.js.bootstrap',
           'medialog.controlpanel',
           'plone.api',

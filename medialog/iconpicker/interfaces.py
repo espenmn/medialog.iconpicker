@@ -6,14 +6,15 @@ from z3c.form import interfaces
 from zope import schema
 #from zope.interface import Interface
 from zope.interface import alsoProvides
-from plone.directives import form
+from plone.supermodel import model
+
 from medialog.controlpanel.interfaces import IMedialogControlpanelSettingsProvider
 
 from zope.i18nmessageid import MessageFactory
 
 _ = MessageFactory('medialog.iconpicker')
 
-class IIconPickerSettings(form.Schema):
+class IIconPickerSettings(model.Schema):
     """Adds settings to medialog.controlpanel
     https://erikflowers.github.io/weather-icons/
 	http://www.typicons.com/
@@ -24,7 +25,7 @@ class IIconPickerSettings(form.Schema):
 	http://map-icons.com/
     """
 
-    form.fieldset(
+    model.fieldset(
         'iconpicker',
         label=_(u'Iconpicker settings'),
         fields=[

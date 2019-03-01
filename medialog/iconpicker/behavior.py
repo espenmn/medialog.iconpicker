@@ -1,10 +1,11 @@
 from zope import schema
 from zope.interface import Interface
 from zope.interface import implements
-from plone.directives import form
+from plone.supermodel import model
 from plone.autoform.interfaces import IFormFieldProvider
 from zope.interface import alsoProvides
 from zope.i18nmessageid import MessageFactory
+from plone.autoform.directives import widget
 
 from medialog.iconpicker.widgets.widget import IconPickerFieldWidget
 from medialog.iconpicker.widgets.widget import ColorPickerFieldWidget
@@ -12,9 +13,8 @@ from medialog.iconpicker.widgets.widget import ColorPickerFieldWidget
 _ = MessageFactory('medialog.iconpicker')
 
 
-class IIconPickerBehavior(form.Schema):
+class IIconPickerBehavior(model.Schema):
     """ A field for icons"""
-    
     
     iconfield = schema.TextLine(
         title = _("icon", default=u"Icon"),
@@ -23,16 +23,15 @@ class IIconPickerBehavior(form.Schema):
                       default="Choose Icon"),
     )
 
-    form.widget(
+    widget(
             iconfield=IconPickerFieldWidget,
     )
 
 alsoProvides(IIconPickerBehavior, IFormFieldProvider)
 
 
-class IColorPickerBehavior(form.Schema):
+class IColorPickerBehavior(model.Schema):
     """ A color field"""
-    
     
     color = schema.TextLine(
         title = _("color", default=u"Color"),
@@ -41,7 +40,7 @@ class IColorPickerBehavior(form.Schema):
                       default="Choose Color"),
     )
 
-    form.widget(
+    widget(
             color=ColorPickerFieldWidget,
     )
 

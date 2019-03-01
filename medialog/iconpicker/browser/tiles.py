@@ -7,7 +7,6 @@ from plone.app.tiles.browser.edit import DefaultEditForm
 from plone.app.tiles.browser.edit import DefaultEditView
 from plone.memoize.view import memoize
 from plone.supermodel import model
-from plone.directives import form
 from plone.tiles import Tile
 from plone.tiles.data import TransientTileDataManager
 from plone.tiles.interfaces import ITileDataManager
@@ -15,6 +14,7 @@ from zope import schema
 from zope.i18nmessageid import MessageFactory
 #from zope.interface import provider
 
+from plone.autoform.directives import widget
 
 #????
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
@@ -43,7 +43,7 @@ class IIconTile(model.Schema):
                       default="Choose Icon"),
     )
 
-    form.widget(
+    widget(
             iconfield=IconPickerFieldWidget,
     )
 
@@ -55,7 +55,7 @@ class IIconTile(model.Schema):
                       default="Choose Color"),
     )
 
-    form.widget(
+    widget(
             color=ColorPickerFieldWidget,
     )
 
@@ -129,17 +129,6 @@ class IconTile(Tile):
         return api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.iconset')
 
 
-
-#class IconTileAddView(DefaultAddView):
-#    form = IconTileAddForm
-
-
-#class IconTileEditView(DefaultEditView):
-#    form = IconTileEditForm
-
-
-
-
 class IPair(model.Schema):
     iconfield = schema.TextLine(
         title = _("icon", default=u"Icon"),
@@ -148,7 +137,7 @@ class IPair(model.Schema):
                       default="Choose Icon"),
     )
 
-    form.widget(
+    widget(
             iconfield=IconPickerFieldWidget,
     )
 
@@ -177,7 +166,7 @@ class IMultiIconTile(model.Schema):
                       default="Choose Color"),
     )
 
-    form.widget(
+    widget(
             color=ColorPickerFieldWidget,
     )
 
@@ -189,7 +178,7 @@ class IMultiIconTile(model.Schema):
                       default="CSS Class"),
     )
 
-    form.widget(iconpairs=DataGridFieldFactory)
+    widget(iconpairs=DataGridFieldFactory)
     iconpairs = schema.List(
         title = _(u"icon text_pairs",
             default=u"Icon Text pairs"),

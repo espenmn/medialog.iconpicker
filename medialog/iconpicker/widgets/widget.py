@@ -10,7 +10,6 @@ from plone import api
 from medialog.iconpicker.interfaces import IIconPickerSettings
 
 
-
 class IIconPickerWidget(interfaces.IWidget):
     """Iconpicker widget."""
 
@@ -18,8 +17,6 @@ class IIconPickerWidget(interfaces.IWidget):
 @zope.interface.implementer_only(IIconPickerWidget)
 class IconPickerWidget(text.TextWidget):
     """Iconpicker Widget"""
-
-    zope.interface.implementsOnly(IIconPickerWidget)
 
     def family_css(self):
         #return css_family_class, like fa, wi
@@ -159,11 +156,9 @@ def IconPickerFieldWidget(field, request):
 class IColorPickerWidget(interfaces.IWidget):
     """Colorpicker widget."""
 
-
+@zope.interface.implementer_only(IColorPickerWidget)
 class ColorPickerWidget(text.TextWidget):
     """Colorpicker Widget"""
-
-    zope.interface.implementsOnly(IColorPickerWidget)
 
 
 @zope.interface.implementer(interfaces.IFieldWidget) 
