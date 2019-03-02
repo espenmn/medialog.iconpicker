@@ -1,7 +1,7 @@
 <!-- js and  resources -->
 
 <span class="ontop">
-<input  			   tal:attributes="id string:${view/id};
+<input    tal:attributes="id string:${view/id};
                        name view/name;
                        value view/value;
                        title view/title;
