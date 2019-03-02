@@ -9,7 +9,6 @@
             klasse python: family  + ' ' + icon"
         tal:attributes="class klasse; style style"> </span>
         
-	  <!-- font specific resources -->
 	  <tal:resources tal:define="iconset view/iconset" tal:replace="structure view/?iconset"/>
  </html>
  
