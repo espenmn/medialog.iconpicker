@@ -6,13 +6,13 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="medialog.iconpicker">
-  
-  
-  <i18n:registerTranslations directory="locales" />  
-    
+
+
+  <i18n:registerTranslations directory="locales" />
+
   <!-- Include configuration for dependencies listed in setup.py -->
   <includeDependencies package="." />
- 
+
   <include package=".widgets" />
   <include package=".browser" />
 
@@ -31,15 +31,15 @@
         template="templates/iconload.pt"
         permission="zope2.View"
     />
- 
+
      <browser:page
         for="*"
         name="iconview"
         template="templates/iconview.pt"
         permission="zope2.View"
     />
-  
- 
+
+
   <!-- Include behavior -->
   <include file="behaviors.zcml" />
 

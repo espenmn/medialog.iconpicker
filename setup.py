@@ -1,13 +1,12 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.7'
+version = '0.7.1'
 
 setup(name='medialog.iconpicker',
       version=version,
       description="Iconpicker for Plone",
-      long_description=open("README.rst").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
+      long_description='Iconpicker add on for Plone based on bootstrap iconpicker'
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
