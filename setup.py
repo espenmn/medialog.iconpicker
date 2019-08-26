@@ -1,19 +1,24 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.7.1'
+version = '0.7.2'
 
 setup(name='medialog.iconpicker',
       version=version,
       description="Iconpicker for Plone",
-      long_description='Iconpicker add on for Plone based on bootstrap iconpicker'
+      long_description="Iconpicker add on for Plone based on bootstrap iconpicker",
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         "Framework :: Plone",
+        "Framework :: Plone :: 5.0",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 2.7",
+        "Operating System :: OS Independent",
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
-        ],
+        "Environment :: Web Environment",
+    ],
       keywords='',
       author='Espen Moe-Nilssen',
       author_email='espen@medialog.no',

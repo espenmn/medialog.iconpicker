@@ -1,14 +1,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       tal:omit-tag="">
-      
-      <span tal:define="family view/family_css; 
+
+      <span tal:define="family view/family_css;
             icon view/value;
             color view/color;
             style python:'bgcolor:' + color;
-            klasse python: family  + ' iconfont ' + icon"
+            klasse python: 'iconpicer_cdisplay ' +  family  + ' iconfont ' + icon"
         tal:attributes="class klasse; style style"> </span>
-        
+
 	  <tal:resources tal:define="iconset view/iconset" tal:replace="structure view/?iconset"/>
  </html>
- 
