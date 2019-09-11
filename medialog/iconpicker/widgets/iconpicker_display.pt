@@ -6,7 +6,7 @@
             icon view/value;
             color view/color;
             style python:'color:' + color;
-            klasse python: 'iconpicker_display " + family  + ' ' + icon"
+            klasse python: 'iconpicker_display ' + family  + ' ' + icon"
         tal:attributes="class klasse; style style"> </span>
 
 	  <tal:resources tal:define="iconset view/iconset" tal:replace="structure view/?iconset"/>
