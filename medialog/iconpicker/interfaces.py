@@ -2,7 +2,7 @@
 # Default ENCODING = 'UTF-8'
 
 ####################
-from z3c.form import interfaces
+# from z3c.form import interfaces
 from zope import schema
 #from zope.interface import Interface
 from zope.interface import alsoProvides

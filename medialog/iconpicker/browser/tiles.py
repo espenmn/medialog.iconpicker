@@ -23,8 +23,8 @@ from zope.schema import getFields
 from plone.tiles.interfaces import ITileType
 
 
-from collective.z3cform.datagridfield import DataGridFieldFactory
-from collective.z3cform.datagridfield import DictRow
+from collective.z3cform.datagridfield.datagridfield import DataGridFieldFactory
+from collective.z3cform.datagridfield.row import DictRow
 
 
 _ = MessageFactory('medialog.iconpicker')
