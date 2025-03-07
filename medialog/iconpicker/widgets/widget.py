@@ -44,19 +44,16 @@ class IconPickerWidget(text.TextWidget):
 
         return 'fa'
 
-
-
-    def plone5(self):
-        try:
-            from Products.CMFPlone.factory import _IMREALLYPLONE5
-            return 1
-        except ImportError:
-            return 0
-
+ 
 
     def iconset(self):
         """Returns current iconset name This is also used for loading the resources below"""
         return api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.iconset')
+    
+
+    def fonticonset(self):
+        font_method = self.iconset()  # Ensure this returns a valid method name
+        return getattr(self, font_method)() 
 
     def cols(self):
         return api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.cols')
@@ -92,8 +89,8 @@ class IconPickerWidget(text.TextWidget):
 
     def fontawesome(self):
         return """
-        <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.2.0.js"></script>
-        <link rel="stylesheet" href="++resource++medialog.iconpicker/icon-fonts/font-awesome-4.2.0/css/font-awesome.min.css"/>
+        <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.7.0.js"></script>
+        <link rel="stylesheet" href="++resource++medialog.iconpicker/icon-fonts/font-awesome-6.2.0/css/font-awesome.min.css"/>
         """
 
     def  mapicon(self):
