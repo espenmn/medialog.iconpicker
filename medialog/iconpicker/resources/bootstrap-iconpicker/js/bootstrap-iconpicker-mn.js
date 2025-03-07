@@ -1,5 +1,5 @@
 /*!========================================================================
-* File: bootstrap-iconpicker.js v1.10.0 by @victor-valencia
+* File: bootstrap-iconpicker.js v1.10.1 by @victor-valencia
 * https://victor-valencia.github.com/bootstrap-iconpicker
 * ========================================================================
 * Copyright 2013-2018 Victor Valencia Rico.
@@ -493,8 +493,8 @@
                             placement: op.placement
                         }).on('inserted.bs.popover', function() {
                             var el = $this.data('bs.popover');
-                            var tip = ($.fn.bsVersion() === '3.x') ? el.tip() : $(el.getTipElement());
-                            tip.addClass('iconpicker-popover');
+                            var tip =  'my tip';
+                            // tip.addClass('iconpicker-popover');
                         }).on('shown.bs.popover', function () {
                             data.switchPage(op.icon);
                             data.bindEvents();

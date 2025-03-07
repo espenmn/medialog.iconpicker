@@ -1,43 +1,12 @@
-
-/*! * Mosaic hack */
-
-.iconpicker-popover,
-.iconpicker-popover.popover-content,
-.popover.iconpicker-popover {
-	z-index: 9999 !important;
-	-moz-filter: blur(0);
-	-o-filter: blur(0); 
-	-ms-filter: blur(0);
-	filter: blur(0);
-	position: fixed !important;
-}
-
-.iconpicker-popover,
-.iconpicker-popover.popover-content,
-.popover.iconpicker-popover {
-	z-index: 9999 !important;
-	-moz-filter: blur(0);
-	-o-filter: blur(0); 
-	-ms-filter: blur(0);
-	filter: blur(0);
-	position: fixed !important;
-}
-
-
-/*!
- * Bootstrap-iconpicker v1.5.0
- *
- * Copyright 2013-2014 Victor Valencia Rico.
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Designed and built with all the love in the world by @recktoner.
- */
-.
-    
-        
-    
-
+/*!========================================================================
+* File: bootstrap-iconpicker.css v1.10.0 by @victor-valencia
+* https://victor-valencia.github.com/bootstrap-iconpicker
+* ========================================================================
+* Copyright 2013-2018 Victor Valencia Rico.
+* Licensed under MIT license.
+* https://github.com/victor-valencia/bootstrap-iconpicker/blob/master/LICENSE
+* ========================================================================
+*/
 
 .iconpicker .caret {
     margin-left: 10px !important;
@@ -45,6 +14,24 @@
 
 .iconpicker {
     min-width: 60px;
+}
+
+.iconpicker input.search-control {
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+div.iconpicker.left .table-icons {
+    margin-right: auto;
+}
+
+div.iconpicker.center .table-icons {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.iconpicker.right .table-icons {
+    margin-left: auto;
 }
 
 .table-icons .btn {
@@ -55,7 +42,7 @@
     margin: 2px;
 }
 
-.table-icons td {    
+.table-icons td {
     min-width: 39px;
 }
 
@@ -68,6 +55,6 @@
 }
 
 .iconpicker-popover .search-control {
-    margin-bottom: 6px; 
+    margin-bottom: 6px;
     margin-top: 6px;
 }

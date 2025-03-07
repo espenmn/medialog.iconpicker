@@ -128,6 +128,10 @@ class IconTile(Tile):
         """Returns current iconset name This is also used for loading the resources below"""
         return api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.iconset')
 
+    @property
+    def fonticonset(self):
+        font = self.iconset()
+        return self.font()
 
 class IPair(model.Schema):
     iconfield = schema.TextLine(

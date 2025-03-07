@@ -21,6 +21,7 @@
       this.$element = $(element);
       this.options  = $.extend({}, Iconpicker.DEFAULTS, this.$element.data());
       this.options  = $.extend({}, this.options, options);
+
     };
 
     // ICONPICKER VERSION

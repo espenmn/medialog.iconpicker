@@ -9,5 +9,5 @@
             klasse python: 'iconpicer_cdisplay ' +  family  + ' iconfont ' + icon"
         tal:attributes="class klasse; style style"> </span>
 
-	  <tal:resources tal:define="iconset view/iconset" tal:replace="structure view/?iconset"/>
+	  <tal:resources  tal:replace="structure view/fonticonset"/>
  </html>
