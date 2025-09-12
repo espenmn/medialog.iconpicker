@@ -47,7 +47,6 @@
         hideOnSelect: true,
         fade: false,
         defaultValue: $input.val(),
-        placement: '${view/placement}',
         renderIcon: function(iconClass) {
             return iconClass;
         }
@@ -74,14 +73,9 @@
       gap: 0.5rem;
     }
     .iconpicker-dropdown { position: relative; left: 0; z-index: 1050}
-
     .iconpicker-dropdown ul { width: ${view/cols}px ; height: ${view/rows}px ; }
 
-
     </style>
-
-
-
 </html>
 
  

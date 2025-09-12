@@ -32,7 +32,6 @@ class IIconPickerSettings(model.Schema):
              'iconset',
              'cols',
              'rows',
-             'placement',
         ],
      )
 
@@ -61,10 +60,7 @@ class IIconPickerSettings(model.Schema):
      	title=_(u"label_rows", default=u"Height"),
     )
 
-    placement = schema.Choice(
-        title=_(u"label_placement", default=u"Placement"),
-        values=['left', 'top', 'bottom', 'right',]
-    )
+ 
 
 
 alsoProvides(IIconPickerSettings, IMedialogControlpanelSettingsProvider)

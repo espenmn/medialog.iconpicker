@@ -37,7 +37,6 @@ jQuery(function($) {
         icons: faIcons,
         hideOnSelect: true,
         defaultValue: $input.val(),
-        placement: 'bottom-end',
         renderIcon: function(iconClass) {
             return 'iconClass';
         }
