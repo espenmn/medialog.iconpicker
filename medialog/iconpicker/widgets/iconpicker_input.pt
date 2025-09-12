@@ -5,8 +5,8 @@
     <tal:resources tal:replace="structure view/fonticonset"/>
 
     <span class="ontop">
-    
-    <input tal:attributes="id string:${view/id};
+
+        <input tal:attributes="id string:${view/id};
                        class view/family_css;
                        name view/name;
                        title view/title;
@@ -38,7 +38,8 @@
             // build something like "fa fa-address-book"
             ikons.push(base + " " + fix + name);
         }
-        }
+    }
+ 
 
 
     // Initialize Iconpicker
@@ -63,7 +64,7 @@
 });
     </script>
 
-    <style>
+<style>
     .iconpicker-btn {
       display: inline-flex;
       align-items: center;

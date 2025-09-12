@@ -22,7 +22,7 @@
 
 ;(function($){
 
-    $.iconset_octicon = {
+    $.iconset = {
         iconClass: 'octicon',
         iconClassFix: 'octicon-',
         icons: [

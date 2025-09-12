@@ -15,7 +15,7 @@
  * ======================================================================== */
 
 ;(function($){
-   $.iconset_lineawesome = {
+   $.iconset = {
         iconClass: 'la',
         iconClassFix: 'la-',
         icons: [ 

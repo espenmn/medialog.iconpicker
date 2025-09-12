@@ -22,7 +22,7 @@
 
 ;(function($){
 
-    $.iconset_elusiveicon = {
+    $.iconset = {
         iconClass: '',
         iconClassFix: 'el-icon-',
         icons: [

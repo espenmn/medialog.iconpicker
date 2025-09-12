@@ -21,7 +21,7 @@
 
 ;(function($){
 
-    $.iconset_glyphicon = {
+    $.iconset = {
         iconClass: 'glyphicon',
         iconClassFix: 'glyphicon-',
         icons: [

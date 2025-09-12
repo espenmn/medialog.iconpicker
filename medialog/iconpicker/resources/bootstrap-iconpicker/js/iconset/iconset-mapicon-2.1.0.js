@@ -22,7 +22,7 @@
 
 ;(function($){
 
-    $.iconset_mapicon = {
+    $.iconset = {
         iconClass: '',
         iconClassFix: 'map-icon-',
         icons: [

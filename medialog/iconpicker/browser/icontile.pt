@@ -7,7 +7,10 @@
   <p tal:condition="view/data/title">${view/data/title}</p>
   <p tal:condition="view/data/text">${view/data/text}</p>
 </span>
-
+ 
+ <!-- TO DO: Load font -->
+ <!-- <link rel="stylesheet" href="++resource++medialog.iconpicker/icon-fonts/octicons-2.1.2/css/octicons.min.css"/> -->
+ 
 
     <style>
 iconpicker-popover {

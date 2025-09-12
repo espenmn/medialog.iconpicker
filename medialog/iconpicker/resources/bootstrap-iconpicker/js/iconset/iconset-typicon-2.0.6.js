@@ -22,7 +22,7 @@
 
 ;(function($){
 
-    $.iconset_typicon = {
+    $.iconset = {
         iconClass: 'typcn',
         iconClassFix: 'typcn-',
         icons: [

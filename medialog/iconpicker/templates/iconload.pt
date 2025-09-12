@@ -4,4 +4,4 @@
     style python:'color:' + color;
     klasse python: family + ' iconfont ' + icon"
     tal:attributes="class klasse; style style"> </span>
-    
+ 

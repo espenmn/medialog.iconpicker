@@ -22,7 +22,7 @@
 
 ;(function($){
 
-    $.iconset_weathericon = {
+    $.iconset = {
         iconClass: 'wi',
         iconClassFix: 'wi-',
         icons: [

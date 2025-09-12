@@ -4,7 +4,7 @@
 
 ;(function($){
 
-    $.iconset_medialogfont = {
+    $.iconset  = {
         iconClass: '',
         iconClassFix: '',
         icons: [

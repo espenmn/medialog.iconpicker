@@ -22,7 +22,7 @@
 
 ;(function($){
 
-    $.iconset_ionicon = {
+    $.iconset = {
         iconClass: '',
         iconClassFix: 'ion-',
         icons: [
