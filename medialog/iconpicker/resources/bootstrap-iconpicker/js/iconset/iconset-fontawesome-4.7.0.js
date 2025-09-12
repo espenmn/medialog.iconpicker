@@ -2,7 +2,7 @@
  * Iconset Font Awesome 4.7.0
  */
 ;(function($){
-    $.iconset_fontawesome = {
+    $.iconset = {
         iconClass: 'fa',
         iconClassFix: 'fa-',
         icons: [

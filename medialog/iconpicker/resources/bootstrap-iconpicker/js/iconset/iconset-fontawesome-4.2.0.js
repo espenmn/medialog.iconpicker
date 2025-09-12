@@ -22,7 +22,7 @@
 
 ;(function($){
 
-    $.iconset_fontawesome = {
+    $.iconset = {
         iconClass: 'fa',
         iconClassFix: 'fa-',
         icons: [

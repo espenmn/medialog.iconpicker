@@ -10,4 +10,5 @@
         tal:attributes="class klasse; style style"> </span>
 
 	  <tal:resources  tal:replace="structure view/fonticonset"/>
+        
  </html>

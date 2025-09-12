@@ -89,11 +89,11 @@ class IconPickerWidget(text.TextWidget):
 
     def fontawesome(self):
         return """
-        <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.7.0.js"></script>
-        <link rel="stylesheet" href="++resource++medialog.iconpicker/icon-fonts/font-awesome-6.2.0/css/font-awesome.min.css"/>
+        <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.2.0.js"></script>
+        <link rel="stylesheet" href="++resource++medialog.iconpicker/icon-fonts/font-awesome-4.2.0/css/font-awesome.min.css"/>
         """
 
-    def  mapicon(self):
+    def mapicon(self):
         return """
         <link rel="stylesheet" href="++resource++medialog.iconpicker/icon-fonts/map-icons-2.1.0/css/map-icons.min.css"/>
         <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-mapicon-2.1.0.min.js"></script>

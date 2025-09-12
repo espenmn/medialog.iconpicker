@@ -33,7 +33,6 @@ class IIconPickerSettings(model.Schema):
              'cols',
              'rows',
              'placement',
-             'loadbootstrap',
         ],
      )
 
@@ -52,12 +51,6 @@ class IIconPickerSettings(model.Schema):
         values=[('glyphicon'), ('ionicon'), ('fontawesome'), ('weathericon'), ('mapicon'), ('octicon'), ('typicon'), ('elusiveicon'), ('medialogfont'), ('iconpickerfont'), ('lineawesome'),]
     )
 
-    loadbootstrap = schema.Bool(
-     	title=_(u"label_loadbootstrap", default=u"Load Bootstrap"),
-        description=_(u"help_loadbootstrap",
-            default=u"""Loads ++resource++collective.js.bootstrap/js/bootstrap.min.js. <br/>
-            You probably want to do this in your diazo theme instead.""")
-    )
 
     cols = schema.Int (
     	title=_(u"label_columns", default=u"Columns"),

@@ -1,55 +1,45 @@
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal">
 
     <!-- Codethereal Iconpicker -->
     <script src="https://unpkg.com/codethereal-iconpicker@1.2.1/dist/iconpicker.js"></script>
     <tal:resources tal:replace="structure view/fonticonset"/>
 
-    <span class="ontop">
-    
-    <input tal:attributes="id string:${view/id};
-                       class view/family_css;
+    <div>
+        <input tal:attributes="id string:${view/id};
                        name view/name;
                        title view/title;
                        lang view/lang;
                        alt view/alt;
-                       value view/value;
                        accesskey view/accesskey;
                        onselect view/onselect;
                        size view/size;
                        maxlength view/maxlength" />
-    </span>
+    </div>
 
 
     <script type="text/javascript">
-    jQuery(function($) {
-        var $button = $("#${view/id}");
-        var $input = $("#${view/id}");
+jQuery(function($) {
+    var $button = $("#${view/id}");
+    var $input = $("#${view/id}");
 
-        var iconset = $.iconset || {};
-        var ikons = [];
-        
-
-        if (iconset.icons && iconset.icons.length) {
-        var base = iconset.iconClass || "";
-        var fix  = iconset.iconClassFix || "";
-        for (var i=0; i<iconset.icons.length; i++) {
-            var name = iconset.icons[i];
-            if (!name) continue;
-            // build something like "fa fa-address-book"
-            ikons.push(base + " " + fix + name);
-        }
-        }
-
+    var faIcons = [
+        "fa fa-star", "fa fa-heart", "fa fa-moon-o", "fa fa-sun-o",
+        "fa fa-bell", "fa fa-bolt", "fa fa-camera", "fa fa-car",
+        "fa fa-cloud", "fa fa-cog", "fa fa-comments", "fa fa-envelope",
+        "fa fa-home", "fa fa-info", "fa fa-lock", "fa fa-map",
+        "fa fa-phone", "fa fa-print", "fa fa-search", "fa fa-user"
+    ];
 
     // Initialize Iconpicker
     var iconpicker = new Iconpicker($button[0], {
-        icons: ikons,
+        icons: faIcons,
         hideOnSelect: true,
-        fade: false,
         defaultValue: $input.val(),
         placement: 'bottom-end',
         renderIcon: function(iconClass) {
-            return iconClass;
+            return 'iconClass';
         }
     });
 
@@ -88,5 +78,3 @@
 
 
 </html>
-
- 
