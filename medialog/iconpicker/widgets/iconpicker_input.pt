@@ -6,9 +6,9 @@
         <tal:resources tal:replace="structure view/fonticonset"/>
     </head>
     <body>
-    <span class="ontop">
+        <span class="ontop">
 
-        <input tal:attributes="id string:${view/id};
+            <input tal:attributes="id string:${view/id};
                        class view/family_css;
                        name view/name;
                        title view/title;
@@ -19,16 +19,34 @@
                        onselect view/onselect;
                        size view/size;
                        maxlength view/maxlength" />
-    </span>
+        </span>
 
-    <script type="text/javascript">
-    jQuery(function($) {
+       
+
+<style>
+    .iconpicker-btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 0.25rem;
+      background: #f8f9fa;
+      cursor: pointer;
+      font-size: 1rem;
+      gap: 0.5rem;
+    }
+    .iconpicker-dropdown { position: relative; left: 0; z-index: 1050}
+    .iconpicker-dropdown ul { width: ${view/cols}px ; height: ${view/rows}px ; }
+
+    </style>
+</body>
+ <script type="text/javascript">
+    $(function($) {
         var $button = $("#${view/id}");
         var $input = $("#${view/id}");
 
         var iconset = $.iconset || {};
-        var ikons = [];
-        
+        var ikons = [];        
 
         if (iconset.icons && iconset.icons.length) {
         var base = iconset.iconClass || "";
@@ -36,11 +54,9 @@
         for (var i=0; i<iconset.icons.length; i++) {
             var name = iconset.icons[i];
             if (!name) continue;
-            // build something like "fa fa-address-book"
             ikons.push(base + " " + fix + name);
         }
     }
- 
 
 
     // Initialize Iconpicker
@@ -61,24 +77,6 @@
     }); 
 });
     </script>
-
-<style>
-    .iconpicker-btn {
-      display: inline-flex;
-      align-items: center;
-      padding: 0.5rem 0.75rem;
-      border: 1px solid #ccc;
-      border-radius: 0.25rem;
-      background: #f8f9fa;
-      cursor: pointer;
-      font-size: 1rem;
-      gap: 0.5rem;
-    }
-    .iconpicker-dropdown { position: relative; left: 0; z-index: 1050}
-    .iconpicker-dropdown ul { width: ${view/cols}px ; height: ${view/rows}px ; }
-
-    </style>
-    </body>
 </html>
 
  
