@@ -64,11 +64,9 @@ class IconPickerWidget(text.TextWidget):
     def placement(self):
         return api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.placement')
 
-
     def loadbootstrap(self):
         #get settings from control panel / registry
         return api.portal.get_registry_record('medialog.iconpicker.interfaces.IIconPickerSettings.loadbootstrap')
-
 
     def medialogfont(self):
         return """

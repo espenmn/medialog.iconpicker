@@ -1,10 +1,14 @@
 Introduction
 ============
 
+### Version 1.0
 Iconpicker widget for Plone based on http://victor-valencia.github.io/bootstrap-iconpicker/
 
 ![image](http://victor-valencia.github.io/bootstrap-iconpicker/bootstrap-iconpicker.png)
 
+### Version 2.0
+- Only for Plone 6.
+- Does not use bootstrap iconpicker anymore
 
 Installation
 ============

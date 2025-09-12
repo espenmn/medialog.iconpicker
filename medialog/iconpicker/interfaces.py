@@ -53,16 +53,17 @@ class IIconPickerSettings(model.Schema):
 
 
     cols = schema.Int (
-    	title=_(u"label_columns", default=u"Columns"),
+    	title=_(u"label_columns", default=u"Width"),
+        default=300,
     )
 
     rows = schema.Int (
-    	title=_(u"label_rows", default=u"Rows"),
+     	title=_(u"label_rows", default=u"Height"),
     )
 
     placement = schema.Choice(
         title=_(u"label_placement", default=u"Placement"),
-        values=[('left'), ('top'), ('bottom'), ('right'),]
+        values=['left', 'top', 'bottom', 'right',]
     )
 
 

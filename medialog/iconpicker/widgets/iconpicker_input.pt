@@ -47,7 +47,7 @@
         hideOnSelect: true,
         fade: false,
         defaultValue: $input.val(),
-        placement: 'bottom-end',
+        placement: '${view/placement}',
         renderIcon: function(iconClass) {
             return iconClass;
         }
@@ -57,9 +57,7 @@
     $button.on("click", function() {
         var $dropdown = $(".iconpicker-dropdown"); // the dropdown element
         $dropdown.show();
-    });
-
- 
+    }); 
 });
     </script>
 
@@ -77,12 +75,9 @@
     }
     .iconpicker-dropdown { position: relative; left: 0; z-index: 1050}
 
-    .iconpicker-btn:hover {
-      background: #e9ecef;
-    }
-    .iconpicker-btn i {
-      font-size: 1.2rem;
-    }
+    .iconpicker-dropdown ul { width: ${view/cols}px ; height: ${view/rows}px ; }
+
+
     </style>
 
 
