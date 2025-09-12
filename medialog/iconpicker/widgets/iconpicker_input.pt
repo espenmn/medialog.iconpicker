@@ -1,9 +1,11 @@
 <html>
 
     <!-- Codethereal Iconpicker -->
-    <script src="https://unpkg.com/codethereal-iconpicker@1.2.1/dist/iconpicker.js"></script>
-    <tal:resources tal:replace="structure view/fonticonset"/>
-
+    <head>
+        <script src="https://unpkg.com/codethereal-iconpicker@1.2.1/dist/iconpicker.js"></script>
+        <tal:resources tal:replace="structure view/fonticonset"/>
+    </head>
+    <body>
     <span class="ontop">
 
         <input tal:attributes="id string:${view/id};
@@ -76,6 +78,7 @@
     .iconpicker-dropdown ul { width: ${view/cols}px ; height: ${view/rows}px ; }
 
     </style>
+    </body>
 </html>
 
  
