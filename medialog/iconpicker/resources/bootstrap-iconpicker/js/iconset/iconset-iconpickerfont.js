@@ -4,7 +4,7 @@
 
 ;(function($){
 
-    $.iconset  = {
+    $.iconset = {
         iconClass: '',
         iconClassFix: '',
         icons: [

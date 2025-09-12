@@ -7,7 +7,7 @@ class FontLoad(BrowserView):
 
     def value(self):
     	return self.context
-
+ 
     def family_css(self):
         #return css_family_class, like fa, wi
         iconset = self.iconset()
@@ -38,6 +38,7 @@ class FontLoad(BrowserView):
 
     def glyphicon(self):
         return """
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
         <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-glyphicon.min.js"></script>
         """
 
@@ -108,3 +109,8 @@ class FontLoad(BrowserView):
         if color:
             return '#' + color
         return "inherit"
+    
+    
+    def fonticonset(self):
+        font_method = self.iconset()  # Ensure this returns a valid method name
+        return getattr(self, font_method)() 

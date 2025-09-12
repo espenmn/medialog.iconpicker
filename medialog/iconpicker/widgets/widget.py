@@ -83,7 +83,8 @@ class IconPickerWidget(text.TextWidget):
         """
 
     def glyphicon(self):
-        return """
+        return """           
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
         <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-glyphicon.min.js"></script>
         """
 
@@ -131,7 +132,7 @@ class IconPickerWidget(text.TextWidget):
 
     def lineawesome(self):
         return """
-        <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-line-awesome.js"></script>
+        <script type="text/javascript" src="++resource++medialog.iconpicker/bootstrap-iconpicker/js/iconset/iconset-lineawesome.js"></script>
         <link rel="stylesheet" href="++resource++medialog.iconpicker/icon-fonts/line-awesome/css/line-awesome.css"/>
         """
 

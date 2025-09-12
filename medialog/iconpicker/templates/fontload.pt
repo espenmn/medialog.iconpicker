@@ -1,3 +1,2 @@
 <!-- font specific resources -->
 <tal:resources  tal:replace="structure view/fonticonset"/>
-

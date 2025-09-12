@@ -19,7 +19,6 @@
                        maxlength view/maxlength" />
     </span>
 
-
     <script type="text/javascript">
     jQuery(function($) {
         var $button = $("#${view/id}");
