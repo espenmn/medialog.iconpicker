@@ -21,9 +21,9 @@
                        maxlength view/maxlength" />
         </span>
 
-       
 
-<style>
+
+        <style>
     .iconpicker-btn {
       display: inline-flex;
       align-items: center;
@@ -38,9 +38,9 @@
     .iconpicker-dropdown { position: relative; left: 0; z-index: 1050}
     .iconpicker-dropdown ul { width: ${view/cols}px ; height: ${view/rows}px ; }
 
-    </style>
-</body>
- <script type="text/javascript">
+        </style>
+    </body>
+    <script type="text/javascript">
     $(function($) {
         var $button = $("#${view/id}");
         var $input = $("#${view/id}");
@@ -56,19 +56,19 @@
             if (!name) continue;
             ikons.push(base + " " + fix + name);
         }
+
+        // Initialize Iconpicker
+        var iconpicker = new Iconpicker($button[0], {
+            icons: ikons,
+            hideOnSelect: true,
+            fade: false,
+            defaultValue: $input.val(),
+            renderIcon: function(iconClass) {
+                return iconClass;
+            }
+        });
+
     }
-
-
-    // Initialize Iconpicker
-    var iconpicker = new Iconpicker($button[0], {
-        icons: ikons,
-        hideOnSelect: true,
-        fade: false,
-        defaultValue: $input.val(),
-        renderIcon: function(iconClass) {
-            return iconClass;
-        }
-    });
 
     // Toggle visibility/opacity on click
     $button.on("click", function() {
