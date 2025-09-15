@@ -22,61 +22,79 @@
         </span>
 
 
-
         <style>
-    .iconpicker-btn {
-      display: inline-flex;
-      align-items: center;
-      padding: 0.5rem 0.75rem;
-      border: 1px solid #ccc;
-      border-radius: 0.25rem;
-      background: #f8f9fa;
-      cursor: pointer;
-      font-size: 1rem;
-      gap: 0.5rem;
-    }
-    .iconpicker-dropdown { position: relative; left: 0; z-index: 1050}
-    .iconpicker-dropdown ul { width: ${view/cols}px ; height: ${view/rows}px ; }
-
+            .iconpicker-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 0.25rem;
+            background: #f8f9fa;
+            cursor: pointer;
+            font-size: 1rem;
+            gap: 0.5rem;
+            }
+            .iconpicker-dropdown { position: relative; left: 0; z-index: 1050}
+            .iconpicker-dropdown ul { width: ${view/cols}px ; height: ${view/rows}px ; }
         </style>
-    </body>
-    <script type="text/javascript">
-    $(function($) {
-        var $button = $("#${view/id}");
-        var $input = $("#${view/id}");
 
-        var iconset = $.iconset || {};
-        var ikons = [];        
+    <script>
+(function($){
+  $(function(){
 
-        if (iconset.icons && iconset.icons.length) {
+    function initIconpickerIn($context){
+      var $button = $context.find("#${view/id}");
+      var $input  = $context.find("#${view/id}");
+      if (!$button.length) return;
+      if ($button.data('iconpicker-initialized')) return; // already done
+
+      var iconset = $.iconset || {};
+      var ikons = [];
+      if (iconset.icons && iconset.icons.length){
         var base = iconset.iconClass || "";
         var fix  = iconset.iconClassFix || "";
-        for (var i=0; i<iconset.icons.length; i++) {
-            var name = iconset.icons[i];
-            if (!name) continue;
-            ikons.push(base + " " + fix + name);
+        for (var i=0; i<iconset.icons.length; i++){
+          var name = iconset.icons[i];
+          if (!name) continue;
+          ikons.push(base + " " + fix + name);
         }
+      }
 
-        // Initialize Iconpicker
-        var iconpicker = new Iconpicker($button[0], {
-            icons: ikons,
-            hideOnSelect: true,
-            fade: false,
-            defaultValue: $input.val(),
-            renderIcon: function(iconClass) {
-                return iconClass;
-            }
-        });
+      if (typeof Iconpicker === 'undefined'){
+        console.warn('Iconpicker library not found. Make sure iconpicker.js is loaded before this script.');
+        return;
+      }
 
+      // create the picker
+      var iconpicker = new Iconpicker($button[0], {
+        icons: ikons,
+        hideOnSelect: true,
+        fade: false,
+        defaultValue: $input.val(),
+        renderIcon: function(iconClass){ return iconClass; }
+      });
+
+      $button.data('iconpicker-initialized', true);
+
+      // toggle visibility on click (namespace event so we can remove later if needed)
+      $button.on('click.iconpicker', function(){
+        var $dropdown = $(".iconpicker-dropdown");
+        if ($dropdown.length) $dropdown.show();
+      });
     }
 
-    // Toggle visibility/opacity on click
-    $button.on("click", function() {
-        var $dropdown = $(".iconpicker-dropdown"); // the dropdown element
-        $dropdown.show();
-    }); 
-});
-    </script>
+    // 1) When ANY bootstrap modal finishes showing, try to init inside it
+    $(document).on('shown.bs.modal', '.modal', function(){
+      initIconpickerIn($(this));
+    });
+
+    // 2) If the widget is already in the page and visible at load time, init immediately
+    initIconpickerIn($(document));
+  });
+})(jQuery);
+</script>
+
+    </body>
 </html>
 
  
